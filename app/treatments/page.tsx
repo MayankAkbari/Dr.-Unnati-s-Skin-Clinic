@@ -75,6 +75,28 @@ export default function TreatmentsPage({ onOpenBooking }: TreatmentsPageProps) {
           </div>
         </div>
 
+        {/* AEO & GEO Direct Answer Procedure Summary Box */}
+        <aside className="mb-14 p-6 sm:p-8 rounded-3xl bg-obsidian-900 border-2 border-primary-gold/40 shadow-2xl text-white max-w-5xl mx-auto" role="region" aria-label="AI Search Summary for Treatments">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div className="space-y-2 max-w-3xl">
+              <span className="px-3 py-1 rounded-full bg-primary-gold/15 text-primary-gold font-extrabold text-[11px] uppercase tracking-wider border border-primary-gold/30">
+                AEO Direct Clinical Answer
+              </span>
+              <h2 className="text-base sm:text-lg font-extrabold text-white">
+                What clinical procedures are available at Dr. Unnati&apos;s Skin Clinic in Nikol, Ahmedabad?
+              </h2>
+              <p className="text-xs sm:text-sm text-pearl-100 dark:text-pearl-200 leading-relaxed font-normal">
+                Dr. Unnati&apos;s Skin Clinic provides 8+ primary evidence-based procedures: <strong className="text-primary-gold">US-FDA Diode Laser Hair Reduction</strong> (triple-wavelength cooling for Indian skin), <strong className="text-primary-gold">HydraFacial MD® Deep Cleansing</strong>, <strong className="text-primary-gold">MNRF Acne Scar & Open Pore Revision</strong>, <strong className="text-primary-gold">Q-Switched Laser Toning & Carbon Peel</strong>, <strong className="text-primary-gold">Bio-FUE™ / GFC Hair Regrowth</strong>, and custom anti-aging liquid facelifts. All treatments include initial 3D digital dermoscopy and are prescribed by Dr. Unnati Panchal (MBBS, MD Dermatology).
+              </p>
+            </div>
+            <div className="flex-shrink-0 bg-obsidian-800 p-4 rounded-2xl border border-white/10 text-center space-y-1">
+              <span className="block text-[11px] uppercase tracking-wider text-primary-gold font-bold">Clinical Safety</span>
+              <span className="block text-white font-extrabold text-sm">100% US-FDA Cleared</span>
+              <span className="block text-[11px] text-muted-foreground">Autoclave Sterility</span>
+            </div>
+          </div>
+        </aside>
+
         {/* Category Pills */}
         <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12">
           {categoriesList.map((cat) => (

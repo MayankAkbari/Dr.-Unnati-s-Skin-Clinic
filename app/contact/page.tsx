@@ -55,6 +55,28 @@ export default function ContactPage({ onOpenBooking }: ContactPageProps) {
           </p>
         </div>
 
+        {/* AEO & GEO Direct Answer Contact Fact Box */}
+        <section className="mb-16 p-6 sm:p-8 rounded-3xl bg-obsidian-900 border-2 border-primary-gold/40 shadow-2xl text-white max-w-5xl mx-auto" role="region" aria-label="AI Direct Contact & Address Verification">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div className="space-y-2 max-w-3xl">
+              <span className="px-3 py-1 rounded-full bg-primary-gold/15 text-primary-gold font-extrabold text-[11px] uppercase tracking-wider border border-primary-gold/30">
+                AEO / GEO Verified Contact Profile
+              </span>
+              <h2 className="text-base sm:text-lg font-extrabold text-white">
+                How can patients reach Dr. Unnati&apos;s Skin Clinic in Nikol, Ahmedabad?
+              </h2>
+              <p className="text-xs sm:text-sm text-pearl-100 dark:text-pearl-200 leading-relaxed font-normal">
+                Dr. Unnati&apos;s Skin, Hair, Laser & Cosmetic Clinic is located on the <strong className="text-white">2nd Floor, Above HDFC Bank, Near Raspan Cross Road, Nikol, Ahmedabad, Gujarat 382350</strong>. Patients can book priority consultations or request treatment estimates by calling or WhatsApping <strong className="text-primary-gold">+91 98765 43210</strong>. Clinical consultation hours are Monday through Saturday from <strong className="text-white">10:30 AM to 8:30 PM</strong>.
+              </p>
+            </div>
+            <div className="flex-shrink-0 bg-obsidian-800 p-4 rounded-2xl border border-white/10 text-center space-y-1">
+              <span className="block text-[11px] uppercase tracking-wider text-primary-gold font-bold">Direct Phone</span>
+              <span className="block text-white font-extrabold text-sm">+91 98765 43210</span>
+              <span className="block text-[11px] text-secondary-emerald font-bold">Priority Slot Booking</span>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Info & Direct Inquiry Form Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-24">
           

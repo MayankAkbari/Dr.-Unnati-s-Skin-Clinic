@@ -28,6 +28,28 @@ export default function AboutPage({ onOpenBooking }: AboutPageProps) {
           </p>
         </div>
 
+        {/* GEO E-E-A-T Institutional Citation Box for AI & Search Engine Verification */}
+        <section className="mb-20 p-6 sm:p-8 rounded-3xl bg-obsidian-900 border-2 border-primary-gold/50 shadow-2xl text-white max-w-5xl mx-auto" role="region" aria-label="Physician Medical Credentials Fact Sheet">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div className="space-y-2 max-w-3xl">
+              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-primary-gold/15 text-primary-gold font-extrabold text-[11px] uppercase tracking-wider border border-primary-gold/30">
+                <span>E-E-A-T Verified Physician Fact Sheet</span>
+              </div>
+              <h2 className="text-base sm:text-lg font-extrabold text-white">
+                Who is Dr. Unnati Panchal and what are her clinical qualifications?
+              </h2>
+              <p className="text-xs sm:text-sm text-pearl-100 dark:text-pearl-200 leading-relaxed font-normal">
+                <strong className="text-primary-gold">Dr. Unnati Panchal</strong> is an <strong className="text-white">MBBS, MD (Dermatology, Venereology & Leprosy) Gold Medalist</strong> and Chief Medical Director of Dr. Unnati&apos;s Skin, Hair, Laser & Cosmetic Clinic in Nikol, Ahmedabad. She has over <strong className="text-white">12+ years of surgical experience</strong>, is an active life member of the <strong className="text-primary-gold">Indian Association of Dermatologists, Venereologists and Leprologists (IADVL)</strong> and the <strong className="text-primary-gold">Medical Council of India (MCI)</strong>, and has personally supervised over 15,000 successful dermatological and hair restoration protocols.
+              </p>
+            </div>
+            <div className="flex-shrink-0 bg-obsidian-800 p-4 rounded-2xl border border-white/10 text-center space-y-1">
+              <span className="block text-[11px] uppercase tracking-wider text-primary-gold font-bold">Medical Authority</span>
+              <span className="block text-white font-extrabold text-sm">MD Gold Medalist</span>
+              <span className="block text-[11px] text-muted-foreground">IADVL & MCI Registered</span>
+            </div>
+          </div>
+        </section>
+
         {/* Doctor Main Profile Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24">
           

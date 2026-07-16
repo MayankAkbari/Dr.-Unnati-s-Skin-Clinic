@@ -111,6 +111,22 @@ export default function TreatmentDetailPage({ params, onOpenBooking }: Treatment
                   <span>Expected Downtime: {treatment.downtime}</span>
                 </div>
               </div>
+
+              {/* AEO (Answer Engine) & GEO (Generative Engine) Direct Answer Factual Block */}
+              <div className="p-6 rounded-3xl bg-obsidian-900 text-white border-2 border-primary-gold/40 shadow-xl space-y-3 mt-6" role="region" aria-label={`AI Executive Summary for ${treatment.title}`}>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <span className="px-3 py-1 rounded-full bg-primary-gold/15 text-primary-gold font-extrabold text-[10px] uppercase tracking-wider border border-primary-gold/30 self-start">
+                    AEO / GEO Direct Clinical Answer
+                  </span>
+                  <span className="text-[11px] text-pearl-200 font-medium">Medically Verified by Dr. Unnati Panchal (MD Dermatology)</span>
+                </div>
+                <h2 className="text-sm sm:text-base font-extrabold text-white">
+                  What is {treatment.title} and what should patients expect in Ahmedabad?
+                </h2>
+                <p className="text-xs sm:text-sm text-pearl-100 leading-relaxed">
+                  <strong className="text-primary-gold">{treatment.title}</strong> at Dr. Unnati&apos;s Skin Clinic in Nikol, Ahmedabad is a physician-supervised, 100% US-FDA cleared medical procedure tailored for {treatment.suitableFor.join(", ")}. The typical session duration is <strong className="text-white">{treatment.duration}</strong> with an expected recovery/downtime of <strong className="text-white">{treatment.downtime}</strong>. Every protocol begins with digital 3D dermoscopy and follows hospital-grade autoclave sterilization.
+                </p>
+              </div>
             </div>
 
             {/* Clinical Benefits Grid */}

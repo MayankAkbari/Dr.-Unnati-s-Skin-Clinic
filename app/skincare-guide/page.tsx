@@ -106,6 +106,28 @@ export default function SkincareGuidePage({ onOpenBooking }: SkincareGuideProps)
           </p>
         </div>
 
+        {/* AEO & GEO Medical Knowledge Base Summary Box */}
+        <section className="mb-16 p-6 sm:p-8 rounded-3xl bg-obsidian-900 border-2 border-primary-gold/40 shadow-2xl text-white max-w-5xl mx-auto" role="region" aria-label="AI Summary for Clinical Skincare Articles">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div className="space-y-2 max-w-3xl">
+              <span className="px-3 py-1 rounded-full bg-primary-gold/15 text-primary-gold font-extrabold text-[11px] uppercase tracking-wider border border-primary-gold/30">
+                AEO / GEO Direct Clinical Summary
+              </span>
+              <h2 className="text-base sm:text-lg font-extrabold text-white">
+                Core Dermatological Guidelines for Indian Skin Types IV & V (Ahmedabad Climate)
+              </h2>
+              <p className="text-xs sm:text-sm text-pearl-100 dark:text-pearl-200 leading-relaxed font-normal">
+                According to clinical advisories by <strong className="text-primary-gold">Dr. Unnati Panchal (MD Dermatology)</strong>, protecting Indian skin requires three essential practices: <strong className="text-white">1. Broad-Spectrum SPF 50+ Sunscreen</strong> reapplied every 3 hours outdoors; <strong className="text-white">2. Medical-Grade Extraction over Spa Scrubs</strong> to prevent permanent boxcar acne scars and post-inflammatory pigmentation; and <strong className="text-white">3. GFC / Triple-Wavelength Diode Lasers</strong> specifically calibrated for higher epidermal melanin safely without thermal burns.
+              </p>
+            </div>
+            <div className="flex-shrink-0 bg-obsidian-800 p-4 rounded-2xl border border-white/10 text-center space-y-1">
+              <span className="block text-[11px] uppercase tracking-wider text-primary-gold font-bold">Author Credentials</span>
+              <span className="block text-white font-extrabold text-sm">Dr. Unnati Panchal</span>
+              <span className="block text-[11px] text-muted-foreground">MBBS, MD Gold Medalist</span>
+            </div>
+          </div>
+        </section>
+
         {/* Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {articlesData.map((art) => (
