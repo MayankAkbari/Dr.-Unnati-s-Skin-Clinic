@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 43% 97%; /* #FDF9F3 Ivory Silk / Warm Cream */
+    --foreground: 280 25% 12%; /* #1C1420 Deep Plum / Midnight Slate */
+
+    --card: 0 0% 100%;
+    --card-foreground: 280 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 280 25% 12%;
+
+    --primary: 351 34% 57%; /* #B76E79 Metallic Rose Gold / Dusty Blush */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 11 20% 70%; /* #C4A8A2 Warm Blush Taupe */
+    --secondary-foreground: 280 25% 12%;
+
+    --muted: 36 30% 92%;
+    --muted-foreground: 280 14% 45%;
+
+    --accent: 351 30% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 36 25% 88%;
+    --input: 36 25% 88%;
+    --ring: 351 34% 57%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 280 22% 8%; /* #140E18 Deep Plum Night / Velvet Obsidian */
+    --foreground: 36 43% 96%; /* #F9F5F0 Ivory Light */
+
+    --card: 280 22% 11%;
+    --card-foreground: 36 43% 96%;
+
+    --popover: 280 22% 11%;
+    --popover-foreground: 36 43% 96%;
+
+    --primary: 352 50% 77%; /* #E3A8B0 Luminous Rose Gold */
+    --primary-foreground: 280 25% 12%;
+
+    --secondary: 357 42% 73%; /* #D89B9E Warm Peach Blush */
+    --secondary-foreground: 280 25% 12%;
+
+    --muted: 280 20% 16%;
+    --muted-foreground: 280 15% 65%;
+
+    --accent: 280 20% 18%;
+    --accent-foreground: 36 43% 96%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 280 20% 18%;
+    --input: 280 20% 18%;
+    --ring: 352 50% 77%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-foreground;
+  }
+}
+
+@layer utilities {
+  .liquid-glass {
+    @apply bg-white/60 dark:bg-obsidian-800/60 backdrop-blur-2xl border border-white/60 dark:border-white/15 shadow-liquid-glass dark:shadow-liquid-glass-dark transition-all duration-300;
+  }
+  .liquid-glass-card {
+    @apply bg-white/70 dark:bg-obsidian-800/70 backdrop-blur-2xl border border-white/70 dark:border-white/20 shadow-liquid-glass dark:shadow-liquid-glass-dark hover:-translate-y-2 hover:shadow-2xl hover:border-primary-gold/60 transition-all duration-300;
+  }
+  .liquid-glass-nav {
+    @apply bg-background/80 dark:bg-obsidian-900/85 backdrop-blur-2xl border border-white/60 dark:border-white/15 shadow-2xl transition-all duration-300;
+  }
+  .liquid-glass-pill {
+    @apply bg-white/60 dark:bg-obsidian-800/70 backdrop-blur-xl border border-white/60 dark:border-white/20 shadow-sm transition-all duration-300;
+  }
+  .liquid-glass-btn {
+    @apply bg-gradient-to-r from-primary-gold via-primary-champagne to-primary-gold text-white dark:text-obsidian-900 font-extrabold shadow-liquid-gold border border-white/60 hover:shadow-2xl hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 relative overflow-hidden;
+  }
+  .glass-card {
+    @apply bg-white/70 dark:bg-obsidian-800/70 backdrop-blur-2xl border border-white/70 dark:border-white/20 shadow-liquid-glass dark:shadow-liquid-glass-dark hover:-translate-y-1.5 transition-all duration-300;
+  }
+  .glass-card-dark {
+    @apply bg-obsidian-800/80 backdrop-blur-2xl border border-primary/30 shadow-liquid-glass-dark transition-all duration-300;
+  }
+  .gold-gradient-text {
+    @apply bg-gradient-to-r from-primary-gold via-[#F2C4CE] to-primary-gold bg-clip-text text-transparent;
+  }
+  .emerald-gradient-text {
+    @apply bg-gradient-to-r from-secondary-emerald via-secondary-teal to-secondary-emerald bg-clip-text text-transparent;
+  }
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/15;
+  }
+}
+
+/* Custom Scrollbar for luxury feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
