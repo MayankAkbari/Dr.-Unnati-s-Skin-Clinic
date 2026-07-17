@@ -2,23 +2,23 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Clinical Skincare Guides & Specialist Advice | Dr. Unnati's Clinical Skin Clinic Nikol",
-  description: "Read evidence-based clinical guides on acne care, post-laser SPF protection, hair fall remedies, and Clinical HydraFacial® maintenance authored by Clinical Specialist Dr. Unnati Panchal.",
+  title: "Cosmetology & Skincare Guides | Dr. Unnati's Skin Clinic Nikol",
+  description: "Read evidence-based guides on acne care, post-laser SPF protection, hair fall remedies, and Clinical HydraFacial® maintenance authored by Cosmetologist & Aesthetic Medicine Expert Dr. Unnati Panchal.",
   keywords: [
-    "Skincare Tips by Specialist Ahmedabad",
+    "Skincare Tips by Cosmetologist Ahmedabad",
     "Acne Scar Care Guide",
     "Post Laser Hair Removal Care",
     "How to Stop Hair Fall Specialist Advice",
     "Sunscreen SPF Guidance Indian Skin",
     "Dr Unnati Panchal Articles",
-    "Clinical Skincare Blog Ahmedabad"
+    "Cosmetology & Aesthetic Blog Ahmedabad"
   ],
   alternates: {
     canonical: "/skincare-guide",
   },
   openGraph: {
-    title: "Clinical Skincare & Laser Knowledge Base | Dr. Unnati's Skin Clinic Nikol",
-    description: "Expert clinical articles, recovery tips, and clinical FAQs by Dr. Unnati Panchal.",
+    title: "Cosmetology & Skincare Knowledge Base | Dr. Unnati's Skin Clinic Nikol",
+    description: "Expert cosmetology articles, recovery tips, and FAQs by Cosmetologist Dr. Unnati Panchal.",
     url: "https://drunnatiskinclinic.com/skincare-guide",
     type: "website",
   },
@@ -33,8 +33,8 @@ export default function SkincareGuideLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "name": "Dr. Unnati's Clinical Skincare Knowledge Base",
-    "description": "Medically reviewed guidance on clinical skin procedures, laser care, and trichology.",
+    "name": "Dr. Unnati's Cosmetology & Skincare Knowledge Base",
+    "description": "Expert guidance on cosmetology skin procedures, laser care, and hair aesthetics.",
     "url": "https://drunnatiskinclinic.com/skincare-guide",
     "author": {
       "@id": "https://drunnatiskinclinic.com/#physician"

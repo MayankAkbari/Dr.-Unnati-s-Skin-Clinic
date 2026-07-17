@@ -26,25 +26,25 @@ export interface Doctor {
 
 export const clinicProfile: Doctor = {
   name: "Dr. Unnati Panchal",
-  title: "Chief Clinical Specialist, Laser & Aesthetic Surgeon",
+  title: "Cosmetologist & Aesthetic Medicine Expert",
   credentials: [
-    "Certified Specialist in Advanced Laser & Aesthetic Surgery",
-    "Certified Hair Transplant Surgeon (Bio-FUE™ Gold Standard)",
+    "Certified Expert in Advanced Laser & Aesthetic Procedures",
+    "Certified Hair Restoration Specialist (Bio-FUE™ Gold Standard)",
     "Fellowship in Clinical Aesthetics & Anti-Aging Treatments",
     "Expert in Advanced Skin & Scalp Diagnostic Protocols"
   ],
-  bio: "Dr. Unnati Panchal is one of Ahmedabad's most respected and sought-after clinical skin and hair specialists, bringing over 12+ years of intensive clinical and cosmetic experience. Renowned for her meticulous precision, ethical diagnostic approach, and mastery over US-FDA approved laser systems, she has transformed over 15,000+ patient lives. She believes that healthy skin is the foundation of confidence and combines evidence-based clinical skin treatments with state-of-the-art aesthetic technology to deliver natural, long-lasting results.",
+  bio: "Dr. Unnati Panchal is one of Ahmedabad's most respected and sought-after cosmetology and aesthetic medicine experts, bringing over 12+ years of intensive aesthetic and cosmetic experience. Renowned for her meticulous precision, ethical diagnostic approach, and mastery over US-FDA approved laser systems, she has transformed over 15,000+ patient lives. She believes that healthy skin is the foundation of confidence and combines evidence-based cosmetology protocols with state-of-the-art aesthetic technology to deliver natural, long-lasting results.",
   specialties: [
     "Advanced Anti-Aging & Facial Harmonization (Botox & Fillers)",
     "Laser Skin Resurfacing & Pigmentation Toning",
     "GFC & Bio-FUE™ Hair Restoration",
     "Clinical Acne & Deep Scar Revision (MNRF & Subcision)",
-    "Pediatric & Clinical Skin Care (Eczema, Psoriasis, Vitiligo)"
+    "Customized Cosmetology Skin Care Protocols"
   ],
-  experience: "12+ Years of Clinical Excellence",
+  experience: "12+ Years of Cosmetology & Aesthetic Excellence",
   awards: [
-    "Excellence in Clinical Laser Care Award - Gujarat Medical Conference",
-    "Best Laser & Skin Clinic in Ahmedabad East (Nikol)",
+    "Excellence in Aesthetic & Laser Care Award - Gujarat Aesthetic Conference",
+    "Best Laser & Cosmetology Clinic in Ahmedabad East (Nikol)",
     "Excellence Award in Advanced Clinical Skin & Laser Therapies",
     "Speaker & Faculty at National Aesthetic & Laser Guild"
   ],

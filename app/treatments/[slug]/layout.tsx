@@ -13,14 +13,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   const title = `${treatment.title} in Nikol, Ahmedabad | Dr. Unnati's Skin & Laser Clinic`;
-  const description = `${treatment.description} Supervised by Clinical Specialist Dr. Unnati Panchal. Duration: ${treatment.duration}. Expected Downtime: ${treatment.downtime}.`;
+  const description = `${treatment.description} Supervised by Cosmetologist & Aesthetic Medicine Expert Dr. Unnati Panchal. Duration: ${treatment.duration}. Expected Downtime: ${treatment.downtime}.`;
 
   return {
     title,
     description,
     keywords: [
       `${treatment.title} Nikol Ahmedabad`,
-      `Best ${treatment.title} Doctor Ahmedabad East`,
+      `Best ${treatment.title} Cosmetologist Ahmedabad East`,
       `${treatment.title} Cost Ahmedabad`,
       `${treatment.title} Procedure Gujarat`,
       `Dr Unnati Panchal ${treatment.title}`,

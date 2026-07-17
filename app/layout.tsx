@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: "Dr. Unnati's Skin, Hair, Laser & Cosmetic Clinic | Best Skin & Laser Clinic in Nikol, Ahmedabad",
     template: "%s | Dr. Unnati's Clinical Skin & Laser Clinic Nikol, Ahmedabad"
   },
-  description: "Experience world-class clinical skin care, US-FDA approved laser hair reduction, Clinical HydraFacial®, MNRF acne scar revision, and GFC/Bio-FUE™ hair restoration led by Clinical Specialist Dr. Unnati Panchal in Nikol, Ahmedabad.",
+  description: "Experience world-class cosmetology skin care, US-FDA approved laser hair reduction, Clinical HydraFacial®, MNRF acne scar revision, and GFC/Bio-FUE™ hair restoration led by Cosmetologist & Aesthetic Medicine Expert Dr. Unnati Panchal in Nikol, Ahmedabad.",
   keywords: [
     "Dr Unnati Panchal",
     "Best Skin Clinic in Nikol Ahmedabad",
@@ -85,7 +85,7 @@ export default function RootLayout({
         "@id": "https://drunnatiskinclinic.com/#website",
         "url": "https://drunnatiskinclinic.com",
         "name": "Dr. Unnati's Skin, Hair, Laser & Cosmetic Clinic",
-        "description": "Ahmedabad's premier clinical skin care and laser aesthetics center led by Clinical Specialist Dr. Unnati Panchal.",
+        "description": "Ahmedabad's premier cosmetology and laser aesthetics center led by Cosmetologist & Aesthetic Medicine Expert Dr. Unnati Panchal.",
         "publisher": {
           "@id": "https://drunnatiskinclinic.com/#clinic"
         },
@@ -129,7 +129,7 @@ export default function RootLayout({
             "closes": "20:30"
           }
         ],
-        "medicalSpecialty": ["SkinCare", "CosmeticProcedures", "LaserSurgery"],
+        "medicalSpecialty": ["CosmeticProcedures", "SkinCare", "Cosmetology"],
         "availableService": [
           {
             "@type": "MedicalProcedure",

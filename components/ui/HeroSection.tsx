@@ -67,7 +67,7 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
               className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal"
             >
               Transform your skin and hair with{" "}
-              <strong className="text-foreground font-semibold">Dr. Unnati Panchal</strong> (Chief Clinical Specialist). Experience US-FDA approved laser therapies, signature HydraFacials, advanced MNRF acne scar revision, and Bio-FUE™ hair restoration in a world-class clinical sanctuary.
+              <strong className="text-foreground font-semibold">Dr. Unnati Panchal</strong> (Cosmetologist & Aesthetic Medicine Expert). Experience US-FDA approved laser therapies, signature HydraFacials, advanced MNRF acne scar revision, and Bio-FUE™ hair restoration in a world-class clinical sanctuary.
             </motion.p>
 
             {/* Bullet Highlights */}
@@ -172,7 +172,7 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
                     <Award className="w-4 h-4 text-primary-gold fill-primary-gold/20" />
                   </div>
                   <p className="text-xs text-secondary-emerald font-bold uppercase tracking-wider">
-                    Chief Clinical Specialist & Laser Surgeon
+                    Cosmetologist & Aesthetic Medicine Expert
                   </p>
                   <p className="text-[11px] text-muted-foreground mt-0.5">
                     12+ Years of Clinical Mastery

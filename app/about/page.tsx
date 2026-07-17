@@ -19,13 +19,13 @@ export default function AboutPage({ onOpenBooking }: AboutPageProps) {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-20">
           <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full liquid-glass-pill text-primary-gold font-extrabold text-xs uppercase tracking-wider border border-primary-gold/30 shadow-sm">
             <Award className="w-4 h-4 text-primary-gold" />
-            <span>Chief Clinical Specialist & Laser Surgeon</span>
+            <span>Cosmetologist & Aesthetic Medicine Expert</span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground">
             Meet <span className="gold-gradient-text">Dr. Unnati Panchal.</span>
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Advanced Clinical Skin & Laser Specialist. Combining 12+ years of surgical precision with evidence-based, transparent aesthetic care in Ahmedabad East.
+            Cosmetologist & Aesthetic Medicine Expert. Combining 12+ years of clinical precision with evidence-based, transparent cosmetology care in Ahmedabad East.
           </p>
         </div>
 
@@ -37,15 +37,15 @@ export default function AboutPage({ onOpenBooking }: AboutPageProps) {
                 <span>E-E-A-T Verified Specialist Fact Sheet</span>
               </div>
               <h2 className="text-base sm:text-lg font-extrabold text-white">
-                Who is Dr. Unnati Panchal and what are her clinical qualifications?
+                Who is Dr. Unnati Panchal and what are her cosmetology and aesthetic qualifications?
               </h2>
               <p className="text-xs sm:text-sm text-pearl-100 dark:text-pearl-200 leading-relaxed font-normal">
-                <strong className="text-primary-gold">Dr. Unnati Panchal</strong> is an <strong className="text-white">Advanced Skin, Hair & Laser Specialist</strong> and Chief Medical Director of Dr. Unnati&apos;s Skin, Hair, Laser & Cosmetic Clinic in Nikol, Ahmedabad. She has over <strong className="text-white">12+ years of surgical experience</strong>, is an active clinical leader in advanced skin aesthetics, and has personally supervised over 15,000 successful clinical skin and hair restoration protocols.
+                <strong className="text-primary-gold">Dr. Unnati Panchal</strong> is a <strong className="text-white">Cosmetologist & Aesthetic Medicine Expert</strong> and Chief Cosmetologist of Dr. Unnati&apos;s Skin, Hair, Laser & Cosmetic Clinic in Nikol, Ahmedabad. She has over <strong className="text-white">12+ years of aesthetic experience</strong>, is an active clinical leader in advanced skin aesthetics, and has personally supervised over 15,000 successful clinical skin and hair restoration protocols.
               </p>
             </div>
             <div className="flex-shrink-0 bg-obsidian-800 p-4 rounded-2xl border border-white/10 text-center space-y-1">
               <span className="block text-[11px] uppercase tracking-wider text-primary-gold font-bold">Clinical Authority</span>
-              <span className="block text-white font-extrabold text-sm">Clinical Specialist</span>
+              <span className="block text-white font-extrabold text-sm">Cosmetology Expert</span>
               <span className="block text-[11px] text-muted-foreground">Certified Laser Expert</span>
             </div>
           </div>
@@ -159,7 +159,7 @@ export default function AboutPage({ onOpenBooking }: AboutPageProps) {
         {/* Clinical Milestones Grid */}
         <div className="space-y-8">
           <h3 className="text-2xl sm:text-3xl font-extrabold text-center text-foreground">
-            Surgical & Clinical Leadership Milestones
+            Cosmetology & Clinical Leadership Milestones
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-8 rounded-3xl liquid-glass-card border-2 border-white/60 dark:border-white/20 shadow-xl space-y-4 hover-lift relative overflow-hidden">

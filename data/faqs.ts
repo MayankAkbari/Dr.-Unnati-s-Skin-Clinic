@@ -9,8 +9,8 @@ export const faqsData: FAQItem[] = [
   {
     id: "gen-1",
     category: "general",
-    question: "Why should I choose a qualified Clinical Specialist over a local beauty salon?",
-    answer: "Beauty salons and non-medical spas perform superficial treatments using unregulated creams or aggressive mechanical scrubs that can permanently damage your skin barrier, stretch pores, and cause severe post-inflammatory hyperpigmentation. At Dr. Unnati's Skin Clinic, every procedure is diagnosed and supervised by Dr. Unnati Panchal, using US-FDA cleared clinical lasers and pure medical-grade serums to ensure unmatched clinical efficacy and 100% safety."
+    question: "Why should I choose a qualified Cosmetologist & Aesthetic Medicine Expert over a local beauty salon?",
+    answer: "Beauty salons and non-medical spas perform superficial treatments using unregulated creams or aggressive mechanical scrubs that can permanently damage your skin barrier, stretch pores, and cause severe post-inflammatory hyperpigmentation. At Dr. Unnati's Skin Clinic, every procedure is diagnosed and supervised by Cosmetologist & Aesthetic Medicine Expert Dr. Unnati Panchal, using US-FDA cleared clinical lasers and pure medical-grade serums to ensure unmatched clinical efficacy and 100% safety."
   },
   {
     id: "gen-2",

@@ -119,13 +119,13 @@ export default function TreatmentDetailPage({ params, onOpenBooking }: Treatment
                   <span className="px-3 py-1 rounded-full bg-primary-gold/15 text-primary-gold font-extrabold text-[10px] uppercase tracking-wider border border-primary-gold/30 self-start">
                     AEO / GEO Direct Clinical Answer
                   </span>
-                  <span className="text-[11px] text-pearl-200 font-medium">Medically Verified by Dr. Unnati Panchal (Clinical Specialist)</span>
+                  <span className="text-[11px] text-pearl-200 font-medium">Verified by Dr. Unnati Panchal (Cosmetologist & Aesthetic Medicine Expert)</span>
                 </div>
                 <h2 className="text-sm sm:text-base font-extrabold text-white">
                   What is {treatment.title} and what should patients expect in Ahmedabad?
                 </h2>
                 <p className="text-xs sm:text-sm text-pearl-100 leading-relaxed">
-                  <strong className="text-primary-gold">{treatment.title}</strong> at Dr. Unnati&apos;s Skin Clinic in Nikol, Ahmedabad is a physician-supervised, 100% US-FDA cleared medical procedure tailored for {treatment.suitableFor.join(", ")}. The typical session duration is <strong className="text-white">{treatment.duration}</strong> with an expected recovery/downtime of <strong className="text-white">{treatment.downtime}</strong>. Every protocol begins with digital 3D dermoscopy and follows hospital-grade autoclave sterilization.
+                  <strong className="text-primary-gold">{treatment.title}</strong> at Dr. Unnati&apos;s Skin Clinic in Nikol, Ahmedabad is a cosmetologist-supervised, 100% US-FDA cleared medical procedure tailored for {treatment.suitableFor.join(", ")}. The typical session duration is <strong className="text-white">{treatment.duration}</strong> with an expected recovery/downtime of <strong className="text-white">{treatment.downtime}</strong>. Every protocol begins with digital 3D dermoscopy and follows hospital-grade autoclave sterilization.
                 </p>
               </div>
             </div>
@@ -236,14 +236,14 @@ export default function TreatmentDetailPage({ params, onOpenBooking }: Treatment
                   Reserve {treatment.title}
                 </h3>
                 <p className="text-xs text-pearl-100 dark:text-pearl-200 leading-relaxed">
-                  Avoid salon risk. Get a customized, ethical diagnosis directly from Clinical Specialist Dr. Unnati Panchal in Nikol.
+                  Avoid salon risk. Get a customized, ethical diagnosis directly from Cosmetologist & Aesthetic Medicine Expert Dr. Unnati Panchal in Nikol.
                 </p>
               </div>
 
               <div className="space-y-3 bg-obsidian-800 p-4 rounded-2xl border border-border/20 text-xs">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Specialist:</span>
-                  <span className="font-bold text-white">Dr. Unnati Panchal (Clinical Specialist)</span>
+                  <span className="font-bold text-white">Dr. Unnati Panchal (Cosmetology Expert)</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Facility:</span>
@@ -278,7 +278,7 @@ export default function TreatmentDetailPage({ params, onOpenBooking }: Treatment
                 </div>
                 <div>
                   <h4 className="font-bold text-sm text-foreground">Dr. Unnati Panchal</h4>
-                  <p className="text-[11px] text-muted-foreground">Clinical Specialist • Laser Surgeon</p>
+                  <p className="text-[11px] text-muted-foreground">Cosmetologist • Aesthetic Medicine Expert</p>
                 </div>
               </div>
               <p className="text-xs text-muted-foreground leading-relaxed">

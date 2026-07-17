@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 import { treatmentsData } from "@/data/treatments";
 
 export const metadata: Metadata = {
-  title: "Clinical & US-FDA Laser Treatments Directory | Dr. Unnati's Skin Clinic Nikol",
-  description: "Explore our comprehensive directory of 100% US-FDA cleared clinical skin therapies, laser hair reduction, Clinical HydraFacial®, MNRF acne scar revision, and Bio-FUE™ hair transplant procedures supervised by Clinical Specialist Dr. Unnati Panchal in Nikol, Ahmedabad.",
+  title: "Cosmetology & US-FDA Laser Treatments Directory | Dr. Unnati's Skin Clinic Nikol",
+  description: "Explore our comprehensive directory of 100% US-FDA cleared cosmetology therapies, laser hair reduction, Clinical HydraFacial®, MNRF acne scar revision, and Bio-FUE™ hair restoration procedures supervised by Cosmetologist & Aesthetic Medicine Expert Dr. Unnati Panchal in Nikol, Ahmedabad.",
   keywords: [
-    "Clinical Skin Treatments Nikol Ahmedabad",
+    "Cosmetology & Skin Treatments Nikol Ahmedabad",
     "Laser Hair Removal Cost Ahmedabad",
     "Clinical HydraFacial Price Nikol",
     "MNRF Acne Scar Treatment Gujarat",
-    "Bio FUE Hair Transplant Nikol",
+    "Bio FUE Hair Restoration Nikol",
     "Chemical Peel Treatment Ahmedabad East",
     "GFC Hair Regrowth Cost Gujarat",
     "US FDA Approved Laser Clinic Ahmedabad"
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "All Treatments Directory | Dr. Unnati's Skin Clinic Nikol, Ahmedabad",
-    description: "Complete clinical portfolio of evidence-based laser and skin procedures by Dr. Unnati Panchal.",
+    description: "Complete cosmetology portfolio of evidence-based laser and aesthetic procedures by Dr. Unnati Panchal.",
     url: "https://drunnatiskinclinic.com/treatments",
     type: "website",
   },
@@ -35,8 +35,8 @@ export default function TreatmentsLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Dr. Unnati's Clinical Skin & Laser Procedures Portfolio",
-    "description": "Evidence-based clinical, aesthetic, and advanced skin procedures.",
+    "name": "Dr. Unnati's Cosmetology & Laser Procedures Portfolio",
+    "description": "Evidence-based cosmetology, aesthetic, and advanced skin procedures.",
     "url": "https://drunnatiskinclinic.com/treatments",
     "numberOfItems": treatmentsData.length,
     "itemListElement": treatmentsData.map((t, idx) => ({

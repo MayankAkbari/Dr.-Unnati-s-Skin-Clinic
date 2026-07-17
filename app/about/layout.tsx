@@ -3,23 +3,23 @@ import type { Metadata } from "next";
 import { clinicProfile } from "@/data/doctors";
 
 export const metadata: Metadata = {
-  title: "About Dr. Unnati Panchal | Chief Clinical Specialist & Laser Surgeon Nikol",
-  description: "Learn about Dr. Unnati Panchal, Clinical Skin & Laser Specialist with 12+ years of clinical excellence. Leading skin, laser & trichology specialist in Nikol, Ahmedabad.",
+  title: "About Dr. Unnati Panchal | Cosmetologist & Aesthetic Medicine Expert Nikol",
+  description: "Learn about Dr. Unnati Panchal, Cosmetologist & Aesthetic Medicine Expert with 12+ years of aesthetic excellence. Leading cosmetology, laser & trichology expert in Nikol, Ahmedabad.",
   keywords: [
     "Dr Unnati Panchal Biography",
-    "Clinical Skin Specialist Ahmedabad",
-    "Best Skin Specialist Doctor in Nikol",
+    "Cosmetologist Ahmedabad",
+    "Best Cosmetology Doctor in Nikol",
     "Dr Unnati Panchal Qualifications",
-    "Skin & Laser Specialist Ahmedabad",
+    "Aesthetic Medicine Expert Ahmedabad",
     "Top Trichologist Nikol Ahmedabad",
-    "Best Laser Skin Specialist Gujarat"
+    "Best Laser Skin Expert Gujarat"
   ],
   alternates: {
     canonical: "/about",
   },
   openGraph: {
     title: "About Dr. Unnati Panchal | Nikol, Ahmedabad",
-    description: "Chief Clinical Specialist & Laser Surgeon with 12+ years of ethical clinical excellence in Ahmedabad East.",
+    description: "Cosmetologist & Aesthetic Medicine Expert with 12+ years of ethical aesthetic excellence in Ahmedabad East.",
     url: "https://drunnatiskinclinic.com/about",
     type: "profile",
   },
@@ -42,41 +42,36 @@ export default function AboutLayout({
         }
       },
       {
-        "@type": "Physician",
+        "@type": "Person",
         "@id": "https://drunnatiskinclinic.com/#physician",
         "name": clinicProfile.name,
         "jobTitle": clinicProfile.title,
-        "description": "Clinical Specialist, Cosmetologist, and Trichologist with over 12+ years of clinical and surgical experience.",
-        "medicalSpecialty": ["SkinCare", "CosmeticProcedures", "Trichology", "LaserSurgery"],
-        "alumniOf": {
-          "@type": "EducationalOrganization",
-          "name": "Advanced Residency in Clinical Skin & Laser Therapeutics"
-        },
-        "award": [
-          "Excellence Award in Advanced Clinical Skin & Laser Therapies",
-          "Best Clinical Skin Specialist Award Gujarat",
-          "Excellence in Laser Aesthetic Surgery"
-        ],
-        "memberOf": [
-          {
-            "@type": "MedicalOrganization",
-            "name": "Association of Clinical Aesthetics & Laser Specialists"
-          },
-          {
-            "@type": "MedicalOrganization",
-            "name": "Medical Council of India (MCI)"
-          }
-        ],
+        "description": "Cosmetologist & Aesthetic Medicine Expert with over 12+ years of cosmetology and aesthetic experience.",
         "worksFor": {
           "@id": "https://drunnatiskinclinic.com/#clinic"
         },
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Advanced Fellowship in Clinical Cosmetology & Laser Aesthetics"
+        },
+        "award": [
+          "Excellence Award in Advanced Cosmetology & Laser Therapies",
+          "Best Cosmetology & Laser Clinic Award Gujarat",
+          "Excellence in Laser Aesthetic Care"
+        ],
+        "memberOf": [
+          {
+            "@type": "Organization",
+            "name": "Association of Clinical Aesthetics & Cosmetology Specialists"
+          }
+        ],
         "knowsAbout": [
           "Acne & Acne Scar Revision (MNRF)",
           "Triple Wavelength Diode Laser Hair Reduction",
-          "Bio-FUE Hair Transplantation",
-          "HydraFacial MD Deep Cleansing",
+          "GFC & Bio-FUE Hair Restoration",
+          "Clinical HydraFacial Deep Cleansing",
           "Melasma & Pigmentation Toning",
-          "Anti-Aging Liquid Facelifts"
+          "Anti-Aging Facial Harmonization"
         ]
       }
     ]

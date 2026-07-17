@@ -103,7 +103,7 @@ export default function SkincareGuidePage({ onOpenBooking }: SkincareGuideProps)
             Clinical Skincare <span className="gold-gradient-text">Journal & Guide.</span>
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Evidence-based clinical advisories authored by Dr. Unnati Panchal (Clinical Specialist) to help you make informed decisions about your skin and hair health in Ahmedabad.
+            Evidence-based cosmetology advisories authored by Dr. Unnati Panchal (Cosmetologist & Aesthetic Medicine Expert) to help you make informed decisions about your skin and hair health in Ahmedabad.
           </p>
         </div>
 
@@ -115,16 +115,16 @@ export default function SkincareGuidePage({ onOpenBooking }: SkincareGuideProps)
                 AEO / GEO Direct Clinical Summary
               </span>
               <h2 className="text-base sm:text-lg font-extrabold text-white">
-                Core Clinical Guidelines for Indian Skin Types IV & V (Ahmedabad Climate)
+                Core Cosmetology & Aesthetic Guidelines for Indian Skin Types IV & V (Ahmedabad Climate)
               </h2>
               <p className="text-xs sm:text-sm text-pearl-100 dark:text-pearl-200 leading-relaxed font-normal">
-                According to clinical advisories by <strong className="text-primary-gold">Dr. Unnati Panchal (Clinical Specialist)</strong>, protecting Indian skin requires three essential practices: <strong className="text-white">1. Broad-Spectrum SPF 50+ Sunscreen</strong> reapplied every 3 hours outdoors; <strong className="text-white">2. Medical-Grade Extraction over Spa Scrubs</strong> to prevent permanent boxcar acne scars and post-inflammatory pigmentation; and <strong className="text-white">3. GFC / Triple-Wavelength Diode Lasers</strong> specifically calibrated for higher epidermal melanin safely without thermal burns.
+                According to clinical advisories by <strong className="text-primary-gold">Dr. Unnati Panchal (Cosmetologist & Aesthetic Medicine Expert)</strong>, protecting Indian skin requires three essential practices: <strong className="text-white">1. Broad-Spectrum SPF 50+ Sunscreen</strong> reapplied every 3 hours outdoors; <strong className="text-white">2. Medical-Grade Extraction over Spa Scrubs</strong> to prevent permanent boxcar acne scars and post-inflammatory pigmentation; and <strong className="text-white">3. GFC / Triple-Wavelength Diode Lasers</strong> specifically calibrated for higher epidermal melanin safely without thermal burns.
               </p>
             </div>
             <div className="flex-shrink-0 bg-obsidian-800 p-4 rounded-2xl border border-white/10 text-center space-y-1">
               <span className="block text-[11px] uppercase tracking-wider text-primary-gold font-bold">Author Authority</span>
               <span className="block text-white font-extrabold text-sm">Dr. Unnati Panchal</span>
-              <span className="block text-[11px] text-muted-foreground">Clinical Specialist</span>
+              <span className="block text-[11px] text-muted-foreground">Cosmetology Expert</span>
             </div>
           </div>
         </section>
@@ -214,7 +214,7 @@ export default function SkincareGuidePage({ onOpenBooking }: SkincareGuideProps)
                     <div className="w-7 h-7 rounded-full bg-white dark:bg-obsidian-900 p-0.5 border border-primary-gold/30 flex items-center justify-center overflow-hidden">
                       <Image src="/logo.png" alt="Dr. Unnati's Skin Clinic Logo" width={24} height={24} className="object-contain w-full h-full" />
                     </div>
-                    <span className="font-bold text-foreground">Authored by Dr. Unnati Panchal (Clinical Specialist)</span>
+                    <span className="font-bold text-foreground">Authored by Dr. Unnati Panchal (Cosmetology Expert)</span>
                   </div>
                   <span>•</span>
                   <span>Published {selectedArticle.date}</span>

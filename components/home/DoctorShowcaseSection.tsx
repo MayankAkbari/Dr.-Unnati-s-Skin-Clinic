@@ -41,20 +41,20 @@ export default function DoctorShowcaseSection({ onOpenBooking }: DoctorShowcaseP
                 </div>
                 <div>
                   <div className="inline-flex items-center px-3 py-1 rounded-full liquid-glass-pill text-primary-gold text-[10px] font-extrabold uppercase tracking-wider mb-1 border border-primary-gold/30">
-                    Chief Clinical Specialist
+                    Cosmetologist & Aesthetic Medicine Expert
                   </div>
                   <h3 className="text-2xl sm:text-3xl font-black text-white leading-tight">
                     Dr. Unnati Panchal
                   </h3>
                   <p className="text-xs sm:text-sm text-secondary-emerald font-extrabold mt-0.5">
-                    Advanced Skin, Hair & Laser Specialist
+                    Cosmetologist & Aesthetic Medicine Expert
                   </p>
                 </div>
               </div>
 
               <div className="py-6 space-y-4 text-xs sm:text-sm text-pearl-100 dark:text-pearl-200 leading-relaxed font-normal">
                 <p>
-                  With over <strong className="text-primary-gold font-bold">12+ years of surgical and clinical leadership</strong>, Dr. Unnati is recognized as one of Gujarat&apos;s leading authorities on laser skin toning, anti-aging liquid facelifts, and Bio-FUE™ hair transplants.
+                  With over <strong className="text-primary-gold font-bold">12+ years of cosmetology and aesthetic leadership</strong>, Dr. Unnati is recognized as one of Gujarat&apos;s leading authorities on laser skin toning, anti-aging liquid facelifts, and Bio-FUE™ hair restoration.
                 </p>
                 <p className="italic text-white border-l-2 border-primary-gold pl-3.5 py-1 bg-white/5 rounded-r-xl">
                   &ldquo;We never oversell or perform unnecessary cosmetic procedures. Our mission is transparent, ethical medicine that restores your natural, radiant confidence.&rdquo;
@@ -86,13 +86,13 @@ export default function DoctorShowcaseSection({ onOpenBooking }: DoctorShowcaseP
             <div className="space-y-4">
               <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full liquid-glass-pill text-secondary-emerald font-extrabold text-xs uppercase tracking-wider border border-secondary-emerald/30 shadow-sm">
                 <Stethoscope className="w-4 h-4 text-secondary-emerald" />
-                <span>The Clinical Difference</span>
+                <span>The Cosmetology Difference</span>
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-foreground leading-tight">
                 Why Discerning Patients Choose <span className="gold-gradient-text block mt-1">Dr. Unnati&apos;s Skin Clinic.</span>
               </h2>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                Most commercial skincare chains rely on therapists or one-size-fits-all packages. Here, your entire journey is directly guided by a dedicated Clinical Specialist utilizing 3D digital dermoscopy.
+                Most commercial skincare chains rely on therapists or one-size-fits-all packages. Here, your entire journey is directly guided by a dedicated Cosmetologist utilizing 3D digital dermoscopy.
               </p>
             </div>
 
