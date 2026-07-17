@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -110,9 +111,15 @@ export default function BookingModal({ isOpen, onClose, defaultTreatmentId }: Bo
           {/* Header */}
           <div className="bg-obsidian-900/90 text-white p-6 sm:p-8 border-b border-white/20 flex items-center justify-between backdrop-blur-md">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary-gold to-secondary-emerald p-0.5 flex-shrink-0">
-                <div className="w-full h-full bg-obsidian-900 rounded-xl flex items-center justify-center font-bold text-primary-gold">
-                  <Calendar className="w-5 h-5" />
+              <div className="w-11 h-11 rounded-xl bg-gradient-to-tr from-primary-gold to-secondary-emerald p-0.5 flex-shrink-0 overflow-hidden">
+                <div className="w-full h-full bg-white dark:bg-obsidian-900 rounded-xl flex items-center justify-center p-0.5">
+                  <Image
+                    src="/logo.png"
+                    alt="Dr. Unnati's Skin Clinic Logo"
+                    width={40}
+                    height={40}
+                    className="object-contain w-full h-full"
+                  />
                 </div>
               </div>
               <div>
@@ -120,7 +127,7 @@ export default function BookingModal({ isOpen, onClose, defaultTreatmentId }: Bo
                   {step === 4 ? "Consultation Confirmed!" : "Priority Appointment Reservation"}
                 </h3>
                 <p className="text-xs text-primary-champagne">
-                  Dr. Unnati Panchal • MD Dermatology (Nikol, Ahmedabad)
+                  Dr. Unnati Panchal • Skin, Hair & Laser Specialist (Nikol, Ahmedabad)
                 </p>
               </div>
             </div>

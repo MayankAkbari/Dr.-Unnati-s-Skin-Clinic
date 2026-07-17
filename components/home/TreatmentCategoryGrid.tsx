@@ -46,7 +46,7 @@ export default function TreatmentCategoryGrid({ onOpenBooking }: TreatmentCatego
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary-gold font-bold text-xs uppercase tracking-wider">
             <Filter className="w-3.5 h-3.5" />
-            <span>US-FDA Cleared Dermatological Procedures</span>
+            <span>US-FDA Cleared Clinical Skincare Procedures</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-foreground">
             Precision Treatments For <span className="gold-gradient-text">Skin, Hair & Lasers.</span>

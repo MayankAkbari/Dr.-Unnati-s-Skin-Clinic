@@ -78,7 +78,7 @@ export const testimonialsData: Testimonial[] = [
     age: 45,
     treatmentTaken: "Laser Pigmentation & Melasma Treatment",
     rating: 5,
-    comment: "Being a doctor myself, I appreciate Dr. Unnati's immense dermatological knowledge and adherence to US-FDA safety protocols. She treated my stubborn facial melasma that didn't respond to topical creams for 3 years. Her combination of laser toning and medical peel protocol cleared it completely in 4 visits. Truly a doctor's doctor!",
+    comment: "Being a doctor myself, I appreciate Dr. Unnati's immense clinical knowledge and adherence to US-FDA safety protocols. She treated my stubborn facial melasma that didn't respond to topical creams for 3 years. Her combination of laser toning and medical peel protocol cleared it completely in 4 visits. Truly a doctor's doctor!",
     date: "1 month ago",
     verified: true,
     beforeAfterTags: ["Melasma Clear", "Doctor Verified"],

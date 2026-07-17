@@ -29,7 +29,7 @@ export default function HomePage({ onOpenBooking }: HomePageProps) {
                 Quick Clinical Profile: Dr. Unnati&apos;s Skin, Hair & Laser Clinic (Nikol, Ahmedabad)
               </h2>
               <p className="text-xs sm:text-sm text-pearl-100 dark:text-pearl-200 leading-relaxed font-normal">
-                <strong className="text-primary-gold font-bold">Dr. Unnati Panchal (MBBS, MD Dermatology - Gold Medalist)</strong> leads Ahmedabad East&apos;s premier medical aesthetics facility specializing in 100% US-FDA approved Diode Laser Hair Reduction, HydraFacial MD® Deep Cleansing, MNRF Acne Scar Revision, and Bio-FUE™ / GFC Hair Transplantations. All protocols are directly physician-guided with zero salon-style upselling and strict hospital-grade autoclave sterilization.
+                <strong className="text-primary-gold font-bold">Dr. Unnati Panchal</strong> leads Ahmedabad East&apos;s premier clinical skin and hair aesthetics facility specializing in 100% US-FDA approved Diode Laser Hair Reduction, Clinical HydraFacial® Deep Cleansing, MNRF Acne Scar Revision, and Bio-FUE™ / GFC Hair Transplantations. All protocols are directly specialist-guided with zero salon-style upselling and strict hospital-grade autoclave sterilization.
               </p>
             </div>
             <div className="flex-shrink-0 text-xs font-bold text-secondary-emerald bg-secondary-emerald/10 px-4 py-3 rounded-2xl border border-secondary-emerald/30 text-center">

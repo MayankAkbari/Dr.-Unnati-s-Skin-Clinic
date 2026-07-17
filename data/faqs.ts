@@ -9,8 +9,8 @@ export const faqsData: FAQItem[] = [
   {
     id: "gen-1",
     category: "general",
-    question: "Why should I choose a qualified Dermatologist over a local beauty salon?",
-    answer: "Beauty salons and non-medical spas perform superficial treatments using unregulated creams or aggressive mechanical scrubs that can permanently damage your skin barrier, stretch pores, and cause severe post-inflammatory hyperpigmentation. At Dr. Unnati's Skin Clinic, every procedure is diagnosed and supervised by Dr. Unnati Panchal (MBBS, MD Dermatology), using US-FDA cleared clinical lasers and pure medical-grade serums to ensure unmatched clinical efficacy and 100% safety."
+    question: "Why should I choose a qualified Clinical Specialist over a local beauty salon?",
+    answer: "Beauty salons and non-medical spas perform superficial treatments using unregulated creams or aggressive mechanical scrubs that can permanently damage your skin barrier, stretch pores, and cause severe post-inflammatory hyperpigmentation. At Dr. Unnati's Skin Clinic, every procedure is diagnosed and supervised by Dr. Unnati Panchal, using US-FDA cleared clinical lasers and pure medical-grade serums to ensure unmatched clinical efficacy and 100% safety."
   },
   {
     id: "gen-2",
@@ -27,7 +27,7 @@ export const faqsData: FAQItem[] = [
   {
     id: "book-2",
     category: "booking",
-    question: "What happens during my first dermatological consultation?",
+    question: "What happens during my first clinical consultation?",
     answer: "During your initial 30-minute consultation, Dr. Unnati performs a thorough clinical history review and uses high-resolution digital dermoscopic imaging to analyze your skin depth, moisture levels, pore structure, or scalp follicular density. Based on medical evidence, she designs a transparent, step-by-step treatment road map tailored to your skin goal and budget."
   },
   {

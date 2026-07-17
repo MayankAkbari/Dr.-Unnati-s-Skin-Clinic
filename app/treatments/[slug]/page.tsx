@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, use } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound, useRouter } from "next/navigation";
 import {
@@ -118,7 +119,7 @@ export default function TreatmentDetailPage({ params, onOpenBooking }: Treatment
                   <span className="px-3 py-1 rounded-full bg-primary-gold/15 text-primary-gold font-extrabold text-[10px] uppercase tracking-wider border border-primary-gold/30 self-start">
                     AEO / GEO Direct Clinical Answer
                   </span>
-                  <span className="text-[11px] text-pearl-200 font-medium">Medically Verified by Dr. Unnati Panchal (MD Dermatology)</span>
+                  <span className="text-[11px] text-pearl-200 font-medium">Medically Verified by Dr. Unnati Panchal (Clinical Specialist)</span>
                 </div>
                 <h2 className="text-sm sm:text-base font-extrabold text-white">
                   What is {treatment.title} and what should patients expect in Ahmedabad?
@@ -235,14 +236,14 @@ export default function TreatmentDetailPage({ params, onOpenBooking }: Treatment
                   Reserve {treatment.title}
                 </h3>
                 <p className="text-xs text-pearl-100 dark:text-pearl-200 leading-relaxed">
-                  Avoid salon risk. Get a customized, ethical diagnosis directly from Gold Medalist Dr. Unnati Panchal in Nikol.
+                  Avoid salon risk. Get a customized, ethical diagnosis directly from Clinical Specialist Dr. Unnati Panchal in Nikol.
                 </p>
               </div>
 
               <div className="space-y-3 bg-obsidian-800 p-4 rounded-2xl border border-border/20 text-xs">
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Doctor:</span>
-                  <span className="font-bold text-white">Dr. Unnati Panchal (MD)</span>
+                  <span className="text-muted-foreground">Specialist:</span>
+                  <span className="font-bold text-white">Dr. Unnati Panchal (Clinical Specialist)</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Facility:</span>
@@ -272,12 +273,12 @@ export default function TreatmentDetailPage({ params, onOpenBooking }: Treatment
             {/* Doctor Authority Mini Card */}
             <div className="p-6 rounded-3xl liquid-glass-card border-2 border-white/60 dark:border-white/20 space-y-4 relative overflow-hidden">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 rounded-xl bg-primary-gold text-obsidian-900 font-black flex items-center justify-center text-lg shadow-md">
-                  UP
+                <div className="w-12 h-12 rounded-xl bg-white dark:bg-obsidian-900 p-1.5 shadow-md flex items-center justify-center overflow-hidden border border-primary-gold/30">
+                  <Image src="/logo.png" alt="Dr. Unnati's Skin Clinic Logo" width={40} height={40} className="object-contain w-full h-full" />
                 </div>
                 <div>
                   <h4 className="font-bold text-sm text-foreground">Dr. Unnati Panchal</h4>
-                  <p className="text-[11px] text-muted-foreground">MD Dermatology • Gold Medalist</p>
+                  <p className="text-[11px] text-muted-foreground">Clinical Specialist • Laser Surgeon</p>
                 </div>
               </div>
               <p className="text-xs text-muted-foreground leading-relaxed">

@@ -161,7 +161,7 @@ export default function ContactPage({ onOpenBooking }: ContactPageProps) {
                 Send A Direct Clinical Inquiry
               </h3>
               <p className="text-xs sm:text-sm text-muted-foreground mb-8">
-                Fill out the form below. A senior dermatological care coordinator will respond with exact procedure estimates and slot availability within 2 hours.
+                Fill out the form below. A senior clinical care coordinator will respond with exact procedure estimates and slot availability within 2 hours.
               </p>
 
               {formSubmitted ? (
@@ -231,7 +231,7 @@ export default function ContactPage({ onOpenBooking }: ContactPageProps) {
                       <option value="hair">GFC / Bio-FUE™ Hair Transplantation</option>
                       <option value="melasma">Q-Switched Laser Melasma & Toning</option>
                       <option value="anti-aging">Liquid Facelift (Botox / Dermal Fillers)</option>
-                      <option value="other">Other Dermatological Inquiry</option>
+                      <option value="other">Other Clinical Inquiry</option>
                     </select>
                   </div>
 

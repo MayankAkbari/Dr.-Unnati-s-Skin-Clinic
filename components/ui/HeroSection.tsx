@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   Sparkles,
@@ -42,7 +43,7 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
               className="inline-flex items-center space-x-2 px-4 py-2 rounded-full liquid-glass-pill text-primary-gold font-extrabold text-xs uppercase tracking-wider shadow-sm border border-white/60 dark:border-white/20"
             >
               <Sparkles className="w-4 h-4 animate-spin text-primary-gold" style={{ animationDuration: "8s" }} />
-              <span>Ahmedabad&apos;s #1 Clinical Dermatology & Laser Center</span>
+              <span>Ahmedabad&apos;s #1 Clinical Skincare & Laser Center</span>
             </motion.div>
 
             {/* Main Headline */}
@@ -66,7 +67,7 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
               className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal"
             >
               Transform your skin and hair with{" "}
-              <strong className="text-foreground font-semibold">Dr. Unnati Panchal</strong> (MBBS, MD Dermatology). Experience US-FDA approved laser therapies, signature HydraFacials, advanced MNRF acne scar revision, and Bio-FUE™ hair restoration in a world-class clinical sanctuary.
+              <strong className="text-foreground font-semibold">Dr. Unnati Panchal</strong> (Chief Clinical Specialist). Experience US-FDA approved laser therapies, signature HydraFacials, advanced MNRF acne scar revision, and Bio-FUE™ hair restoration in a world-class clinical sanctuary.
             </motion.p>
 
             {/* Bullet Highlights */}
@@ -78,7 +79,7 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
             >
               <div className="flex items-center space-x-2">
                 <CheckCircle2 className="w-4 h-4 text-secondary-emerald flex-shrink-0" />
-                <span>MD Gold Medalist Supervision</span>
+                <span>Personalized Specialist Supervision</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle2 className="w-4 h-4 text-secondary-emerald flex-shrink-0" />
@@ -152,9 +153,15 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
             >
               {/* Doctor Header Banner */}
               <div className="flex items-center space-x-4 pb-6 border-b border-border/40">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-primary-gold to-secondary-emerald p-0.5 flex-shrink-0 shadow-md">
-                  <div className="w-full h-full bg-obsidian-900 rounded-2xl flex items-center justify-center text-2xl font-black text-primary-gold">
-                    UP
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-primary-gold to-secondary-emerald p-0.5 flex-shrink-0 shadow-md overflow-hidden">
+                  <div className="w-full h-full bg-white dark:bg-obsidian-900 rounded-2xl flex items-center justify-center p-1">
+                    <Image
+                      src="/logo.png"
+                      alt="Dr. Unnati's Skin Clinic Logo"
+                      width={56}
+                      height={56}
+                      className="object-contain w-full h-full"
+                    />
                   </div>
                 </div>
                 <div>
@@ -165,10 +172,10 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
                     <Award className="w-4 h-4 text-primary-gold fill-primary-gold/20" />
                   </div>
                   <p className="text-xs text-secondary-emerald font-bold uppercase tracking-wider">
-                    Chief Dermatologist & Laser Surgeon
+                    Chief Clinical Specialist & Laser Surgeon
                   </p>
                   <p className="text-[11px] text-muted-foreground mt-0.5">
-                    MBBS, MD Dermatology (Gold Medalist)
+                    12+ Years of Clinical Mastery
                   </p>
                 </div>
               </div>
@@ -251,8 +258,8 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
                 <Check className="w-4 h-4 stroke-[3]" />
               </div>
               <div className="text-xs">
-                <span className="font-extrabold text-secondary-emerald block">Gold Medalist</span>
-                <span className="text-pearl-100 dark:text-pearl-200 font-semibold">MD Dermatology</span>
+                <span className="font-extrabold text-secondary-emerald block">15,000+ Happy Patients</span>
+                <span className="text-pearl-100 dark:text-pearl-200 font-semibold">Clinical Excellence</span>
               </div>
             </motion.div>
           </div>

@@ -30,7 +30,7 @@ export default function TestimonialsCarousel() {
             Stories Of Confidence <span className="gold-gradient-text">Restored.</span>
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground">
-            Read what real patients from Ahmedabad East and Gujarat say after experiencing Dr. Unnati Panchal&apos;s medical dermatology and laser treatments.
+            Read what real patients from Ahmedabad East and Gujarat say after experiencing Dr. Unnati Panchal&apos;s clinical skincare and laser treatments.
           </p>
         </div>
 

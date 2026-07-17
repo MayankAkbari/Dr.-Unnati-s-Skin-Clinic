@@ -33,7 +33,7 @@ export default function ResultsPage({ onOpenBooking }: ResultsPageProps) {
             Real Patients. <span className="gold-gradient-text">Verified Transformations.</span>
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Every clinical outcome shown below represents strict adherence to Dr. Unnati Panchal&apos;s custom dermatological and laser protocols in Nikol, Ahmedabad.
+            Every clinical outcome shown below represents strict adherence to Dr. Unnati Panchal&apos;s custom clinical and laser protocols in Nikol, Ahmedabad.
           </p>
         </div>
 

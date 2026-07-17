@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -99,9 +100,15 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
         >
           {/* 1. Far Left Corner of the Header: Logo */}
           <Link href="/" className="flex items-center space-x-3 group flex-shrink-0">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-gold via-primary-champagne to-secondary-emerald p-[1px] shadow-md group-hover:scale-105 transition-transform flex-shrink-0">
-              <div className="w-full h-full bg-background rounded-xl flex items-center justify-center font-bold text-lg gold-gradient-text">
-                U
+            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary-gold via-primary-champagne to-secondary-emerald p-[1px] shadow-md group-hover:scale-105 transition-transform flex-shrink-0 overflow-hidden">
+              <div className="w-full h-full bg-white dark:bg-obsidian-900 rounded-xl flex items-center justify-center p-0.5">
+                <Image
+                  src="/logo.png"
+                  alt="Dr. Unnati's Skin Clinic Logo"
+                  width={40}
+                  height={40}
+                  className="object-contain w-full h-full"
+                />
               </div>
             </div>
             <div className="flex flex-col text-left">

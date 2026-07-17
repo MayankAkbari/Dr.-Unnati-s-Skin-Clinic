@@ -45,7 +45,7 @@ export const treatmentsData: Treatment[] = [
     iconName: "Sparkles",
     faqs: [
       { question: "Is HydraFacial safe before a major event or wedding?", answer: "Yes! HydraFacial is known as the 'Red Carpet Facial' because it causes zero peeling or inflammation. Your skin looks dewy and radiant immediately after." },
-      { question: "How does medical HydraFacial differ from salon facials?", answer: "Salon facials use manual squeezing that can stretch pores and cause scarring. Our medical HydraFacial uses calibrated vacuum suction and US-FDA approved clinical serums administered under dermatological supervision." }
+      { question: "How does medical HydraFacial differ from salon facials?", answer: "Salon facials use manual squeezing that can stretch pores and cause scarring. Our medical HydraFacial uses calibrated vacuum suction and US-FDA approved clinical serums administered under clinical supervision." }
     ]
   },
   {
@@ -135,7 +135,7 @@ export const treatmentsData: Treatment[] = [
     iconName: "ShieldCheck",
     faqs: [
       { question: "Is laser hair reduction permanent?", answer: "It provides permanent hair reduction of around 85-95%. Any fine hairs that may regrow over years are light, thin, and virtually invisible. Yearly touch-ups can maintain 100% smoothness." },
-      { question: "Is it safe for women with PCOS or hormonal imbalances?", answer: "Yes! In fact, laser hair reduction is the #1 recommended dermatological solution for thick hormonal chin and facial hair caused by PCOS, along with medical hormone management." }
+      { question: "Is it safe for women with PCOS or hormonal imbalances?", answer: "Yes! In fact, laser hair reduction is the #1 recommended clinical solution for thick hormonal chin and facial hair caused by PCOS, along with medical hormone management." }
     ]
   },
   {
@@ -264,5 +264,5 @@ export const categoriesList = [
   { id: "laser", label: "Laser Treatments", icon: "Zap" },
   { id: "hair", label: "Hair & Scalp", icon: "Activity" },
   { id: "anti-aging", label: "Anti-Aging & Injectables", icon: "HeartHandshake" },
-  { id: "cosmetic", label: "Cosmetic Dermatology", icon: "Award" },
+  { id: "cosmetic", label: "Advanced Skin Care", icon: "Award" },
 ];

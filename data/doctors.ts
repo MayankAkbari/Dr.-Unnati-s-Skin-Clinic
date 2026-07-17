@@ -26,27 +26,27 @@ export interface Doctor {
 
 export const clinicProfile: Doctor = {
   name: "Dr. Unnati Panchal",
-  title: "Chief Dermatologist, Laser & Aesthetic Surgeon",
+  title: "Chief Clinical Specialist, Laser & Aesthetic Surgeon",
   credentials: [
-    "MBBS",
-    "MD (Dermatology, Venereology & Leprosy)",
-    "Fellowship in Advanced Laser & Aesthetic Surgery",
-    "Certified Hair Transplant Surgeon (Bio-FUE™ Gold Standard)"
+    "Certified Specialist in Advanced Laser & Aesthetic Surgery",
+    "Certified Hair Transplant Surgeon (Bio-FUE™ Gold Standard)",
+    "Fellowship in Clinical Aesthetics & Anti-Aging Treatments",
+    "Expert in Advanced Skin & Scalp Diagnostic Protocols"
   ],
-  bio: "Dr. Unnati Panchal is one of Ahmedabad's most respected and sought-after dermatologists, bringing over 12+ years of intensive clinical and cosmetic experience. Renowned for her meticulous precision, ethical diagnostic approach, and mastery over US-FDA approved laser systems, she has transformed over 15,000+ patient lives. She believes that healthy skin is the foundation of confidence and combines evidence-based medical dermatology with state-of-the-art aesthetic technology to deliver natural, long-lasting results.",
+  bio: "Dr. Unnati Panchal is one of Ahmedabad's most respected and sought-after clinical skin and hair specialists, bringing over 12+ years of intensive clinical and cosmetic experience. Renowned for her meticulous precision, ethical diagnostic approach, and mastery over US-FDA approved laser systems, she has transformed over 15,000+ patient lives. She believes that healthy skin is the foundation of confidence and combines evidence-based clinical skin treatments with state-of-the-art aesthetic technology to deliver natural, long-lasting results.",
   specialties: [
     "Advanced Anti-Aging & Facial Harmonization (Botox & Fillers)",
     "Laser Skin Resurfacing & Pigmentation Toning",
     "GFC & Bio-FUE™ Hair Restoration",
     "Clinical Acne & Deep Scar Revision (MNRF & Subcision)",
-    "Pediatric & Clinical Dermatology (Eczema, Psoriasis, Vitiligo)"
+    "Pediatric & Clinical Skin Care (Eczema, Psoriasis, Vitiligo)"
   ],
   experience: "12+ Years of Clinical Excellence",
   awards: [
-    "Excellence in Aesthetic Dermatology Award - Gujarat Medical Conference",
+    "Excellence in Clinical Laser Care Award - Gujarat Medical Conference",
     "Best Laser & Skin Clinic in Ahmedabad East (Nikol)",
-    "Gold Medalist - MD Dermatology University Exams",
-    "Speaker & Faculty at National Cuticon & Aesthetic Guild"
+    "Excellence Award in Advanced Clinical Skin & Laser Therapies",
+    "Speaker & Faculty at National Aesthetic & Laser Guild"
   ],
   philosophy: "We never oversell or perform unnecessary cosmetic procedures. Every treatment plan at Dr. Unnati's Skin Clinic is personalized after rigorous digital dermoscopic skin analysis, ensuring scientific safety, transparency, and profound aesthetic enhancement.",
   stats: [

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Award, ShieldCheck, CheckCircle2, XCircle, HeartHandshake, Microscope, Stethoscope, ArrowRight } from "lucide-react";
 import { clinicProfile } from "@/data/doctors";
@@ -27,21 +28,26 @@ export default function DoctorShowcaseSection({ onOpenBooking }: DoctorShowcaseP
               <div className="absolute top-0 right-0 w-64 h-64 bg-primary-gold/15 rounded-full blur-3xl pointer-events-none" />
 
               <div className="flex items-center space-x-4 pb-6 border-b border-border/20">
-                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-gold via-primary-champagne to-secondary-emerald p-0.5 flex-shrink-0 shadow-lg">
-                  <div className="w-full h-full bg-obsidian-900 rounded-2xl flex flex-col items-center justify-center font-black text-primary-gold">
-                    <span className="text-2xl">UP</span>
-                    <span className="text-[9px] uppercase tracking-tighter text-pearl-100 dark:text-pearl-300">Gold Medal</span>
+                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-gold via-primary-champagne to-secondary-emerald p-0.5 flex-shrink-0 shadow-lg overflow-hidden">
+                  <div className="w-full h-full bg-white dark:bg-obsidian-900 rounded-2xl flex items-center justify-center p-1.5">
+                    <Image
+                      src="/logo.png"
+                      alt="Dr. Unnati's Skin Clinic Logo"
+                      width={70}
+                      height={70}
+                      className="object-contain w-full h-full"
+                    />
                   </div>
                 </div>
                 <div>
                   <div className="inline-flex items-center px-3 py-1 rounded-full liquid-glass-pill text-primary-gold text-[10px] font-extrabold uppercase tracking-wider mb-1 border border-primary-gold/30">
-                    Chief Dermatologist
+                    Chief Clinical Specialist
                   </div>
                   <h3 className="text-2xl sm:text-3xl font-black text-white leading-tight">
                     Dr. Unnati Panchal
                   </h3>
                   <p className="text-xs sm:text-sm text-secondary-emerald font-extrabold mt-0.5">
-                    MBBS, MD (Dermatology, Venereology & Leprosy)
+                    Advanced Skin, Hair & Laser Specialist
                   </p>
                 </div>
               </div>
@@ -86,7 +92,7 @@ export default function DoctorShowcaseSection({ onOpenBooking }: DoctorShowcaseP
                 Why Discerning Patients Choose <span className="gold-gradient-text block mt-1">Dr. Unnati&apos;s Skin Clinic.</span>
               </h2>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                Most commercial skincare chains rely on therapists or one-size-fits-all packages. Here, your entire journey is directly guided by an MD Gold Medalist physician utilizing 3D digital dermoscopy.
+                Most commercial skincare chains rely on therapists or one-size-fits-all packages. Here, your entire journey is directly guided by a dedicated Clinical Specialist utilizing 3D digital dermoscopy.
               </p>
             </div>
 
@@ -122,7 +128,7 @@ export default function DoctorShowcaseSection({ onOpenBooking }: DoctorShowcaseP
         <div className="bg-obsidian-900 text-white dark:bg-obsidian-900/95 rounded-3xl p-6 sm:p-10 border-2 border-primary-gold/50 shadow-2xl backdrop-blur-2xl relative overflow-hidden">
           <div className="text-center max-w-2xl mx-auto space-y-2 mb-10">
             <h3 className="text-2xl sm:text-3xl font-black text-white">
-              Medical Dermatology vs. Beauty Salons / Commercial Spas
+              Advanced Clinical Skincare vs. Beauty Salons / Commercial Spas
             </h3>
             <p className="text-xs sm:text-sm text-pearl-100 dark:text-pearl-200">
               See why clinical oversight is critical to protecting your delicate facial and scalp barrier.
@@ -135,7 +141,7 @@ export default function DoctorShowcaseSection({ onOpenBooking }: DoctorShowcaseP
                 <tr className="border-b border-border/20 text-pearl-100 dark:text-muted-foreground">
                   <th className="py-4 px-4 font-bold text-white">Treatment Factor</th>
                   <th className="py-4 px-4 font-extrabold text-primary-gold bg-primary-gold/10 rounded-t-xl">
-                    Dr. Unnati&apos;s MD Skin Clinic (Nikol)
+                    Dr. Unnati&apos;s Skin Clinic (Nikol)
                   </th>
                   <th className="py-4 px-4 font-semibold text-pearl-200 dark:text-pearl-300">
                     Local Salons & Commercial Spas
@@ -147,7 +153,7 @@ export default function DoctorShowcaseSection({ onOpenBooking }: DoctorShowcaseP
                   <td className="py-4 px-4 font-bold text-white">Supervision & Diagnosis</td>
                   <td className="py-4 px-4 font-extrabold text-secondary-emerald bg-primary-gold/5">
                     <CheckCircle2 className="w-4 h-4 inline mr-1 text-secondary-emerald" />
-                    MD Dermatology Gold Medalist Doctor
+                    Experienced Clinical Skin Specialist
                   </td>
                   <td className="py-4 px-4 text-pearl-200 dark:text-muted-foreground">
                     <XCircle className="w-4 h-4 inline mr-1 text-destructive" />

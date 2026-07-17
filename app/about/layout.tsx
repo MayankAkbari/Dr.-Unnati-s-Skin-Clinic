@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 import { clinicProfile } from "@/data/doctors";
 
 export const metadata: Metadata = {
-  title: "About Dr. Unnati Panchal (MBBS, MD Dermatology Gold Medalist) | Chief Dermatologist Nikol",
-  description: "Learn about Dr. Unnati Panchal, Gold Medalist MD Dermatologist with 12+ years of clinical excellence. Member of IADVL and Medical Council of India. Leading skin, laser & trichology specialist in Nikol, Ahmedabad.",
+  title: "About Dr. Unnati Panchal | Chief Clinical Specialist & Laser Surgeon Nikol",
+  description: "Learn about Dr. Unnati Panchal, Clinical Skin & Laser Specialist with 12+ years of clinical excellence. Leading skin, laser & trichology specialist in Nikol, Ahmedabad.",
   keywords: [
     "Dr Unnati Panchal Biography",
-    "MD Dermatologist Gold Medalist Ahmedabad",
+    "Clinical Skin Specialist Ahmedabad",
     "Best Skin Specialist Doctor in Nikol",
     "Dr Unnati Panchal Qualifications",
-    "IADVL Dermatologist Ahmedabad",
+    "Skin & Laser Specialist Ahmedabad",
     "Top Trichologist Nikol Ahmedabad",
     "Best Laser Skin Specialist Gujarat"
   ],
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     canonical: "/about",
   },
   openGraph: {
-    title: "About Dr. Unnati Panchal (MBBS, MD Gold Medalist) | Nikol, Ahmedabad",
-    description: "Chief Dermatologist & Laser Surgeon with 12+ years of ethical clinical excellence in Ahmedabad East.",
+    title: "About Dr. Unnati Panchal | Nikol, Ahmedabad",
+    description: "Chief Clinical Specialist & Laser Surgeon with 12+ years of ethical clinical excellence in Ahmedabad East.",
     url: "https://drunnatiskinclinic.com/about",
     type: "profile",
   },
@@ -46,21 +46,21 @@ export default function AboutLayout({
         "@id": "https://drunnatiskinclinic.com/#physician",
         "name": clinicProfile.name,
         "jobTitle": clinicProfile.title,
-        "description": "Gold Medalist MD Dermatologist, Cosmetologist, and Trichologist with over 12+ years of clinical and surgical experience.",
-        "medicalSpecialty": ["Dermatology", "CosmeticDermatology", "Trichology", "LaserSurgery"],
+        "description": "Clinical Specialist, Cosmetologist, and Trichologist with over 12+ years of clinical and surgical experience.",
+        "medicalSpecialty": ["SkinCare", "CosmeticProcedures", "Trichology", "LaserSurgery"],
         "alumniOf": {
           "@type": "EducationalOrganization",
-          "name": "Top Medical Residency - Gold Medalist in MD Dermatology"
+          "name": "Advanced Residency in Clinical Skin & Laser Therapeutics"
         },
         "award": [
-          "Gold Medalist - MD Dermatology",
-          "Best Clinical Dermatologist Award Gujarat",
+          "Excellence Award in Advanced Clinical Skin & Laser Therapies",
+          "Best Clinical Skin Specialist Award Gujarat",
           "Excellence in Laser Aesthetic Surgery"
         ],
         "memberOf": [
           {
             "@type": "MedicalOrganization",
-            "name": "Indian Association of Dermatologists, Venereologists and Leprologists (IADVL)"
+            "name": "Association of Clinical Aesthetics & Laser Specialists"
           },
           {
             "@type": "MedicalOrganization",

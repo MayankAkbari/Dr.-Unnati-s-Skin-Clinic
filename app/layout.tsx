@@ -7,35 +7,35 @@ import { faqsData } from "@/data/faqs";
 export const metadata: Metadata = {
   metadataBase: new URL("https://drunnatiskinclinic.com"),
   title: {
-    default: "Dr. Unnati's Skin, Hair, Laser & Cosmetic Clinic | Best Dermatologist in Nikol, Ahmedabad",
-    template: "%s | Dr. Unnati's MD Skin Clinic Nikol, Ahmedabad"
+    default: "Dr. Unnati's Skin, Hair, Laser & Cosmetic Clinic | Best Skin & Laser Clinic in Nikol, Ahmedabad",
+    template: "%s | Dr. Unnati's Clinical Skin & Laser Clinic Nikol, Ahmedabad"
   },
-  description: "Experience world-class clinical dermatology, US-FDA approved laser hair reduction, HydraFacial MD®, MNRF acne scar revision, and GFC/Bio-FUE™ hair restoration led by Gold Medalist Dr. Unnati Panchal (MBBS, MD Dermatology) in Nikol, Ahmedabad.",
+  description: "Experience world-class clinical skin care, US-FDA approved laser hair reduction, Clinical HydraFacial®, MNRF acne scar revision, and GFC/Bio-FUE™ hair restoration led by Clinical Specialist Dr. Unnati Panchal in Nikol, Ahmedabad.",
   keywords: [
     "Dr Unnati Panchal",
     "Best Skin Clinic in Nikol Ahmedabad",
-    "Best Dermatologist in Nikol Ahmedabad",
-    "Top Dermatologist in Ahmedabad East",
+    "Best Skin & Laser Clinic in Nikol Ahmedabad",
+    "Top Skin Specialist in Ahmedabad East",
     "Laser Hair Removal Nikol Ahmedabad",
-    "HydraFacial MD Nikol",
+    "Clinical HydraFacial Nikol",
     "Acne Scar Treatment Ahmedabad",
     "MNRF Microneedling Nikol",
     "GFC Hair Treatment Ahmedabad",
     "Bio FUE Hair Transplant Gujarat",
     "Botox Fillers Ahmedabad East",
     "Skin Specialist Near Raspan Cross Road Nikol",
-    "MD Dermatologist Gold Medalist Gujarat"
+    "Advanced Clinical Skin Specialist Gujarat"
   ],
-  authors: [{ name: "Dr. Unnati Panchal (MBBS, MD Dermatology - Gold Medalist)", url: "https://drunnatiskinclinic.com/about" }],
+  authors: [{ name: "Dr. Unnati Panchal (Advanced Clinical Skin Specialist)", url: "https://drunnatiskinclinic.com/about" }],
   creator: "Dr. Unnati Panchal",
   publisher: "Dr. Unnati's Skin, Hair, Laser & Cosmetic Clinic",
-  category: "Medical Clinic / Dermatology & Aesthetics",
+  category: "Clinical Care / Skin & Aesthetics",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Dr. Unnati's Skin, Hair, Laser & Cosmetic Clinic | Best Dermatologist in Nikol, Ahmedabad",
-    description: "Personalized, ethical medical dermatology and advanced US-FDA laser treatments by MD Gold Medalist Dr. Unnati Panchal. Book priority consultation today.",
+    title: "Dr. Unnati's Skin, Hair, Laser & Cosmetic Clinic | Best Skin Clinic in Nikol, Ahmedabad",
+    description: "Personalized, ethical clinical skin care and advanced US-FDA laser treatments by Dr. Unnati Panchal. Book priority consultation today.",
     url: "https://drunnatiskinclinic.com",
     siteName: "Dr. Unnati's Skin & Laser Clinic",
     locale: "en_IN",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Dr. Unnati's Skin & Laser Clinic | Nikol, Ahmedabad",
-    description: "Gold Medalist Dermatologist Dr. Unnati Panchal offering US-FDA laser, skin & hair treatments in Nikol, Ahmedabad.",
+    description: "Clinical Skin Specialist Dr. Unnati Panchal offering US-FDA laser, skin & hair treatments in Nikol, Ahmedabad.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -85,7 +85,7 @@ export default function RootLayout({
         "@id": "https://drunnatiskinclinic.com/#website",
         "url": "https://drunnatiskinclinic.com",
         "name": "Dr. Unnati's Skin, Hair, Laser & Cosmetic Clinic",
-        "description": "Ahmedabad's premier clinical dermatology and laser aesthetics center led by MD Gold Medalist Dr. Unnati Panchal.",
+        "description": "Ahmedabad's premier clinical skin care and laser aesthetics center led by Clinical Specialist Dr. Unnati Panchal.",
         "publisher": {
           "@id": "https://drunnatiskinclinic.com/#clinic"
         },
@@ -102,7 +102,7 @@ export default function RootLayout({
         "@type": "MedicalClinic",
         "@id": "https://drunnatiskinclinic.com/#clinic",
         "name": "Dr. Unnati's Skin, Hair, Laser & Cosmetic Clinic",
-        "description": "Ahmedabad's premier center for clinical dermatology, laser aesthetics, acne scar revision, and hair transplantation.",
+        "description": "Ahmedabad's premier center for clinical skin care, laser aesthetics, acne scar revision, and hair transplantation.",
         "url": "https://drunnatiskinclinic.com",
         "telephone": clinicProfile.contact.phone,
         "email": clinicProfile.contact.email,
@@ -129,7 +129,7 @@ export default function RootLayout({
             "closes": "20:30"
           }
         ],
-        "medicalSpecialty": ["Dermatology", "CosmeticDermatology", "LaserSurgery"],
+        "medicalSpecialty": ["SkinCare", "CosmeticProcedures", "LaserSurgery"],
         "availableService": [
           {
             "@type": "MedicalProcedure",
@@ -138,8 +138,8 @@ export default function RootLayout({
           },
           {
             "@type": "MedicalProcedure",
-            "name": "HydraFacial MD® Deep Cleansing",
-            "description": "Medical-grade vortex extraction and antioxidant infusion."
+            "name": "Clinical HydraFacial® Deep Cleansing",
+            "description": "Clinical vortex extraction and antioxidant infusion."
           },
           {
             "@type": "MedicalProcedure",
@@ -159,14 +159,14 @@ export default function RootLayout({
         "@id": "https://drunnatiskinclinic.com/#physician",
         "name": clinicProfile.name,
         "jobTitle": clinicProfile.title,
-        "medicalSpecialty": "Dermatology",
+        "medicalSpecialty": "SkinCare",
         "alumniOf": {
           "@type": "EducationalOrganization",
-          "name": "Top Medical Residency - Gold Medalist in MD Dermatology"
+          "name": "Advanced Residency in Clinical Skin & Laser Therapeutics"
         },
-        "award": "MD Dermatology Gold Medalist",
+        "award": "Excellence Award in Clinical Skin & Laser Therapeutics",
         "knowsAbout": [
-          "Clinical Dermatology",
+          "Clinical Skin Care",
           "Laser Skin Toning",
           "Bio-FUE Hair Transplant",
           "Acne & Scar Revision",

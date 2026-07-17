@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, BookOpen, Clock, ShieldCheck, ArrowRight, X, CheckCircle2, User } from "lucide-react";
 
@@ -96,13 +97,13 @@ export default function SkincareGuidePage({ onOpenBooking }: SkincareGuideProps)
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full liquid-glass-pill text-primary-gold font-extrabold text-xs uppercase tracking-wider border border-primary-gold/30 shadow-sm">
             <BookOpen className="w-4 h-4 text-primary-gold" />
-            <span>Dermatologist Medical Bulletins</span>
+            <span>Clinical Medical Bulletins</span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground">
             Clinical Skincare <span className="gold-gradient-text">Journal & Guide.</span>
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Evidence-based dermatological advisories authored by Dr. Unnati Panchal (MBBS, MD Dermatology) to help you make informed decisions about your skin and hair health in Ahmedabad.
+            Evidence-based clinical advisories authored by Dr. Unnati Panchal (Clinical Specialist) to help you make informed decisions about your skin and hair health in Ahmedabad.
           </p>
         </div>
 
@@ -114,16 +115,16 @@ export default function SkincareGuidePage({ onOpenBooking }: SkincareGuideProps)
                 AEO / GEO Direct Clinical Summary
               </span>
               <h2 className="text-base sm:text-lg font-extrabold text-white">
-                Core Dermatological Guidelines for Indian Skin Types IV & V (Ahmedabad Climate)
+                Core Clinical Guidelines for Indian Skin Types IV & V (Ahmedabad Climate)
               </h2>
               <p className="text-xs sm:text-sm text-pearl-100 dark:text-pearl-200 leading-relaxed font-normal">
-                According to clinical advisories by <strong className="text-primary-gold">Dr. Unnati Panchal (MD Dermatology)</strong>, protecting Indian skin requires three essential practices: <strong className="text-white">1. Broad-Spectrum SPF 50+ Sunscreen</strong> reapplied every 3 hours outdoors; <strong className="text-white">2. Medical-Grade Extraction over Spa Scrubs</strong> to prevent permanent boxcar acne scars and post-inflammatory pigmentation; and <strong className="text-white">3. GFC / Triple-Wavelength Diode Lasers</strong> specifically calibrated for higher epidermal melanin safely without thermal burns.
+                According to clinical advisories by <strong className="text-primary-gold">Dr. Unnati Panchal (Clinical Specialist)</strong>, protecting Indian skin requires three essential practices: <strong className="text-white">1. Broad-Spectrum SPF 50+ Sunscreen</strong> reapplied every 3 hours outdoors; <strong className="text-white">2. Medical-Grade Extraction over Spa Scrubs</strong> to prevent permanent boxcar acne scars and post-inflammatory pigmentation; and <strong className="text-white">3. GFC / Triple-Wavelength Diode Lasers</strong> specifically calibrated for higher epidermal melanin safely without thermal burns.
               </p>
             </div>
             <div className="flex-shrink-0 bg-obsidian-800 p-4 rounded-2xl border border-white/10 text-center space-y-1">
-              <span className="block text-[11px] uppercase tracking-wider text-primary-gold font-bold">Author Credentials</span>
+              <span className="block text-[11px] uppercase tracking-wider text-primary-gold font-bold">Author Authority</span>
               <span className="block text-white font-extrabold text-sm">Dr. Unnati Panchal</span>
-              <span className="block text-[11px] text-muted-foreground">MBBS, MD Gold Medalist</span>
+              <span className="block text-[11px] text-muted-foreground">Clinical Specialist</span>
             </div>
           </div>
         </section>
@@ -210,12 +211,10 @@ export default function SkincareGuidePage({ onOpenBooking }: SkincareGuideProps)
 
                 <div className="flex items-center space-x-3 text-xs text-muted-foreground pb-6 border-b border-border/60 mb-6">
                   <div className="flex items-center space-x-2">
-                    <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-primary-gold to-secondary-emerald p-0.5">
-                      <div className="w-full h-full bg-obsidian-900 rounded-full flex items-center justify-center text-[10px] font-bold text-white">
-                        UP
-                      </div>
+                    <div className="w-7 h-7 rounded-full bg-white dark:bg-obsidian-900 p-0.5 border border-primary-gold/30 flex items-center justify-center overflow-hidden">
+                      <Image src="/logo.png" alt="Dr. Unnati's Skin Clinic Logo" width={24} height={24} className="object-contain w-full h-full" />
                     </div>
-                    <span className="font-bold text-foreground">Authored by Dr. Unnati Panchal (MD Dermatology)</span>
+                    <span className="font-bold text-foreground">Authored by Dr. Unnati Panchal (Clinical Specialist)</span>
                   </div>
                   <span>•</span>
                   <span>Published {selectedArticle.date}</span>

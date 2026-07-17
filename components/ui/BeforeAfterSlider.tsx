@@ -38,7 +38,7 @@ export default function BeforeAfterSlider() {
             Real Patients. <span className="gold-gradient-text">Profound Outcomes.</span>
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground">
-            Slide across our clinical before-and-after comparison cards. Every result shown represents strict adherence to Dr. Unnati Panchal&apos;s custom dermatological and laser protocols in Ahmedabad.
+            Slide across our clinical before-and-after comparison cards. Every result shown represents strict adherence to Dr. Unnati Panchal&apos;s custom clinical skin and laser protocols in Ahmedabad.
           </p>
         </div>
 

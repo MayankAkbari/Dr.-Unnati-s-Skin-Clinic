@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Award, ShieldCheck, CheckCircle2, HeartHandshake, Microscope, Stethoscope, Calendar, Phone, Star } from "lucide-react";
 import { clinicProfile } from "@/data/doctors";
@@ -18,13 +19,13 @@ export default function AboutPage({ onOpenBooking }: AboutPageProps) {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-20">
           <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full liquid-glass-pill text-primary-gold font-extrabold text-xs uppercase tracking-wider border border-primary-gold/30 shadow-sm">
             <Award className="w-4 h-4 text-primary-gold" />
-            <span>Chief Dermatologist & Laser Surgeon</span>
+            <span>Chief Clinical Specialist & Laser Surgeon</span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground">
             Meet <span className="gold-gradient-text">Dr. Unnati Panchal.</span>
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            MBBS, MD (Dermatology, Venereology & Leprosy) • Gold Medalist. Combining 12+ years of surgical precision with evidence-based, transparent medical aesthetics in Ahmedabad East.
+            Advanced Clinical Skin & Laser Specialist. Combining 12+ years of surgical precision with evidence-based, transparent aesthetic care in Ahmedabad East.
           </p>
         </div>
 
@@ -33,19 +34,19 @@ export default function AboutPage({ onOpenBooking }: AboutPageProps) {
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div className="space-y-2 max-w-3xl">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-primary-gold/15 text-primary-gold font-extrabold text-[11px] uppercase tracking-wider border border-primary-gold/30">
-                <span>E-E-A-T Verified Physician Fact Sheet</span>
+                <span>E-E-A-T Verified Specialist Fact Sheet</span>
               </div>
               <h2 className="text-base sm:text-lg font-extrabold text-white">
                 Who is Dr. Unnati Panchal and what are her clinical qualifications?
               </h2>
               <p className="text-xs sm:text-sm text-pearl-100 dark:text-pearl-200 leading-relaxed font-normal">
-                <strong className="text-primary-gold">Dr. Unnati Panchal</strong> is an <strong className="text-white">MBBS, MD (Dermatology, Venereology & Leprosy) Gold Medalist</strong> and Chief Medical Director of Dr. Unnati&apos;s Skin, Hair, Laser & Cosmetic Clinic in Nikol, Ahmedabad. She has over <strong className="text-white">12+ years of surgical experience</strong>, is an active life member of the <strong className="text-primary-gold">Indian Association of Dermatologists, Venereologists and Leprologists (IADVL)</strong> and the <strong className="text-primary-gold">Medical Council of India (MCI)</strong>, and has personally supervised over 15,000 successful dermatological and hair restoration protocols.
+                <strong className="text-primary-gold">Dr. Unnati Panchal</strong> is an <strong className="text-white">Advanced Skin, Hair & Laser Specialist</strong> and Chief Medical Director of Dr. Unnati&apos;s Skin, Hair, Laser & Cosmetic Clinic in Nikol, Ahmedabad. She has over <strong className="text-white">12+ years of surgical experience</strong>, is an active clinical leader in advanced skin aesthetics, and has personally supervised over 15,000 successful clinical skin and hair restoration protocols.
               </p>
             </div>
             <div className="flex-shrink-0 bg-obsidian-800 p-4 rounded-2xl border border-white/10 text-center space-y-1">
-              <span className="block text-[11px] uppercase tracking-wider text-primary-gold font-bold">Medical Authority</span>
-              <span className="block text-white font-extrabold text-sm">MD Gold Medalist</span>
-              <span className="block text-[11px] text-muted-foreground">IADVL & MCI Registered</span>
+              <span className="block text-[11px] uppercase tracking-wider text-primary-gold font-bold">Clinical Authority</span>
+              <span className="block text-white font-extrabold text-sm">Clinical Specialist</span>
+              <span className="block text-[11px] text-muted-foreground">Certified Laser Expert</span>
             </div>
           </div>
         </section>
@@ -55,10 +56,15 @@ export default function AboutPage({ onOpenBooking }: AboutPageProps) {
           
           <div className="lg:col-span-5">
             <div className="rounded-3xl bg-obsidian-900 text-white dark:bg-obsidian-900/95 p-8 sm:p-10 border-2 border-primary-gold/50 shadow-2xl relative overflow-hidden backdrop-blur-2xl">
-              <div className="w-24 h-24 rounded-3xl bg-gradient-to-tr from-primary-gold to-secondary-emerald p-0.5 mb-6 shadow-xl">
-                <div className="w-full h-full bg-obsidian-900 rounded-3xl flex flex-col items-center justify-center font-black text-primary-gold">
-                  <span className="text-3xl">UP</span>
-                  <span className="text-[10px] uppercase tracking-wider text-pearl-100 dark:text-pearl-300">MD Gold</span>
+              <div className="w-24 h-24 rounded-3xl bg-gradient-to-tr from-primary-gold to-secondary-emerald p-0.5 mb-6 shadow-xl overflow-hidden">
+                <div className="w-full h-full bg-white dark:bg-obsidian-900 rounded-3xl flex items-center justify-center p-2">
+                  <Image
+                    src="/logo.png"
+                    alt="Dr. Unnati's Skin Clinic Logo"
+                    width={80}
+                    height={80}
+                    className="object-contain w-full h-full"
+                  />
                 </div>
               </div>
 
@@ -71,7 +77,7 @@ export default function AboutPage({ onOpenBooking }: AboutPageProps) {
 
               <div className="my-6 pt-6 border-t border-border/20 space-y-3 text-xs sm:text-sm text-pearl-100 dark:text-pearl-200 leading-relaxed">
                 <p>
-                  Graduating at the top of her medical residency as a Gold Medalist, Dr. Unnati dedicated her clinical career to advancing Indian skin dermatology (Fitzpatrick Types IV & V).
+                  With a deep dedication to clinical mastery, Dr. Unnati has spent her career advancing skincare solutions for Indian skin (Fitzpatrick Types IV & V).
                 </p>
                 <p>
                   She personally oversees all high-energy laser protocols, MNRF acne scar revisions, and Bio-FUE™ hair transplantations in Nikol.
@@ -160,7 +166,7 @@ export default function AboutPage({ onOpenBooking }: AboutPageProps) {
               <div className="text-4xl font-black gold-gradient-text">12+ Years</div>
               <h4 className="font-extrabold text-lg text-foreground">Extensive Clinical Practice</h4>
               <p className="text-xs text-muted-foreground leading-relaxed">
-                Over a decade of handling complex dermatological conditions, severe cystic acne breakouts, melasma, and androgenetic alopecia cases across Gujarat.
+                Over a decade of handling complex clinical skin conditions, severe cystic acne breakouts, melasma, and androgenetic alopecia cases across Gujarat.
               </p>
             </div>
 
@@ -168,15 +174,15 @@ export default function AboutPage({ onOpenBooking }: AboutPageProps) {
               <div className="text-4xl font-black text-secondary-emerald">15,000+</div>
               <h4 className="font-extrabold text-lg text-foreground">Verified Patient Transformations</h4>
               <p className="text-xs text-muted-foreground leading-relaxed">
-                Maintained a 99.4% patient satisfaction index by combining personalized home-care dermatological prescriptions with painless laser procedures.
+                Maintained a 99.4% patient satisfaction index by combining personalized home-care clinical prescriptions with painless laser procedures.
               </p>
             </div>
 
             <div className="p-8 rounded-3xl liquid-glass-card border-2 border-white/60 dark:border-white/20 shadow-xl space-y-4 hover-lift relative overflow-hidden">
-              <div className="text-4xl font-black gold-gradient-text">Gold Medalist</div>
-              <h4 className="font-extrabold text-lg text-foreground">MD Dermatology Excellence</h4>
+              <div className="text-4xl font-black gold-gradient-text">100% Safety</div>
+              <h4 className="font-extrabold text-lg text-foreground">Advanced Clinical Excellence</h4>
               <p className="text-xs text-muted-foreground leading-relaxed">
-                Honored for academic and clinical distinction during MD residency, ensuring you receive world-class medical science in Ahmedabad East.
+                Honored for clinical distinction and ethical protocols, ensuring you receive world-class care in Ahmedabad East.
               </p>
             </div>
           </div>

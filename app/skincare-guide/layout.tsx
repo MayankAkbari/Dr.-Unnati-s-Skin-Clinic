@@ -2,23 +2,23 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Clinical Skincare Guides & Dermatological Advice | Dr. Unnati's MD Skin Clinic Nikol",
-  description: "Read evidence-based clinical guides on acne care, post-laser SPF protection, hair fall remedies, and HydraFacial maintenance authored by Gold Medalist Dr. Unnati Panchal (MBBS, MD Dermatology).",
+  title: "Clinical Skincare Guides & Specialist Advice | Dr. Unnati's Clinical Skin Clinic Nikol",
+  description: "Read evidence-based clinical guides on acne care, post-laser SPF protection, hair fall remedies, and Clinical HydraFacial® maintenance authored by Clinical Specialist Dr. Unnati Panchal.",
   keywords: [
-    "Skincare Tips by Dermatologist Ahmedabad",
+    "Skincare Tips by Specialist Ahmedabad",
     "Acne Scar Care Guide",
     "Post Laser Hair Removal Care",
-    "How to Stop Hair Fall Dermatologist Advice",
+    "How to Stop Hair Fall Specialist Advice",
     "Sunscreen SPF Guidance Indian Skin",
     "Dr Unnati Panchal Articles",
-    "Medical Skincare Blog Ahmedabad"
+    "Clinical Skincare Blog Ahmedabad"
   ],
   alternates: {
     canonical: "/skincare-guide",
   },
   openGraph: {
     title: "Clinical Skincare & Laser Knowledge Base | Dr. Unnati's Skin Clinic Nikol",
-    description: "Expert dermatological articles, recovery tips, and clinical FAQs by Dr. Unnati Panchal.",
+    description: "Expert clinical articles, recovery tips, and clinical FAQs by Dr. Unnati Panchal.",
     url: "https://drunnatiskinclinic.com/skincare-guide",
     type: "website",
   },
@@ -34,7 +34,7 @@ export default function SkincareGuideLayout({
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Dr. Unnati's Clinical Skincare Knowledge Base",
-    "description": "Medically reviewed guidance on dermatological procedures, laser skin care, and trichology.",
+    "description": "Medically reviewed guidance on clinical skin procedures, laser care, and trichology.",
     "url": "https://drunnatiskinclinic.com/skincare-guide",
     "author": {
       "@id": "https://drunnatiskinclinic.com/#physician"

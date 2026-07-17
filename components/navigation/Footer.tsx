@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Phone,
   Mail,
@@ -28,9 +29,15 @@ export default function Footer() {
           {/* Col 1 & 2: Clinic Brand & Bio */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="flex items-center space-x-3 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-gold to-secondary-emerald p-[1px] shadow-lg">
-                <div className="w-full h-full bg-obsidian-900 rounded-xl flex items-center justify-center font-bold text-lg text-primary-gold">
-                  U
+              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary-gold to-secondary-emerald p-[1px] shadow-lg overflow-hidden">
+                <div className="w-full h-full bg-white dark:bg-obsidian-900 rounded-xl flex items-center justify-center p-0.5">
+                  <Image
+                    src="/logo.png"
+                    alt="Dr. Unnati's Skin Clinic Logo"
+                    width={40}
+                    height={40}
+                    className="object-contain w-full h-full"
+                  />
                 </div>
               </div>
               <div className="flex flex-col">
@@ -38,12 +45,12 @@ export default function Footer() {
                   Dr. Unnati&apos;s <span className="font-light text-secondary-emerald">Skin Clinic</span>
                 </span>
                 <span className="text-xs text-primary-champagne font-semibold tracking-wider">
-                  MBBS, MD DERMATOLOGY • GOLD MEDALIST
+                  SKIN • HAIR • LASER • AESTHETICS
                 </span>
               </div>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed pr-6">
-              Ahmedabad&apos;s premier clinical center for medical dermatology, laser aesthetics, and Bio-FUE™ hair restoration. We combine evidence-based US-FDA cleared technologies with Dr. Unnati Panchal&apos;s 12+ years of surgical precision to deliver natural, transformational outcomes.
+              Ahmedabad&apos;s premier clinical center for advanced skin aesthetics, laser therapies, and Bio-FUE™ hair restoration. We combine evidence-based US-FDA cleared technologies with Dr. Unnati Panchal&apos;s 12+ years of surgical precision to deliver natural, transformational outcomes.
             </p>
             <div className="pt-2 flex items-center space-x-3">
               <a
@@ -192,7 +199,7 @@ export default function Footer() {
               Join Dr. Unnati&apos;s Skincare Inner Circle
             </h5>
             <p className="text-xs sm:text-sm text-pearl-300 max-w-md leading-relaxed">
-              Receive monthly seasonal skincare advisories, exclusive consultation invites, and medical tips directly from MD Dermatologist.
+              Receive monthly seasonal skincare advisories, exclusive consultation invites, and clinical tips directly from Dr. Unnati Panchal.
             </p>
           </div>
           <form onSubmit={handleSubscribe} className="flex w-full md:w-auto max-w-md gap-2.5">
@@ -216,7 +223,7 @@ export default function Footer() {
           <div className="text-center sm:text-left space-y-1">
             <p>© {new Date().getFullYear()} Dr. Unnati&apos;s Skin Clinic. All Rights Reserved. Medical License & US-FDA Compliance Verified.</p>
             <p className="text-[11px] text-muted-foreground/70">
-              Medical Disclaimer: All clinical procedures shown are performed under strict dermatological supervision. Individual results vary based on age, skin condition, and adherence to prescribed post-care regimens.
+              Medical Disclaimer: All clinical procedures shown are performed under strict clinical supervision. Individual results vary based on age, skin condition, and adherence to prescribed post-care regimens.
             </p>
           </div>
           <div className="flex space-x-6">

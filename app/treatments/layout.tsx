@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 import { treatmentsData } from "@/data/treatments";
 
 export const metadata: Metadata = {
-  title: "Dermatological & US-FDA Laser Treatments Directory | Dr. Unnati's Skin Clinic Nikol",
-  description: "Explore our comprehensive directory of 100% US-FDA cleared dermatology, laser hair reduction, HydraFacial MD®, MNRF acne scar revision, and Bio-FUE™ hair transplant procedures supervised by MD Gold Medalist Dr. Unnati Panchal in Nikol, Ahmedabad.",
+  title: "Clinical & US-FDA Laser Treatments Directory | Dr. Unnati's Skin Clinic Nikol",
+  description: "Explore our comprehensive directory of 100% US-FDA cleared clinical skin therapies, laser hair reduction, Clinical HydraFacial®, MNRF acne scar revision, and Bio-FUE™ hair transplant procedures supervised by Clinical Specialist Dr. Unnati Panchal in Nikol, Ahmedabad.",
   keywords: [
-    "Dermatology Treatments Nikol Ahmedabad",
+    "Clinical Skin Treatments Nikol Ahmedabad",
     "Laser Hair Removal Cost Ahmedabad",
-    "HydraFacial MD Price Nikol",
+    "Clinical HydraFacial Price Nikol",
     "MNRF Acne Scar Treatment Gujarat",
     "Bio FUE Hair Transplant Nikol",
     "Chemical Peel Treatment Ahmedabad East",
@@ -35,8 +35,8 @@ export default function TreatmentsLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Dr. Unnati's Clinical Dermatology & Laser Procedures Portfolio",
-    "description": "Evidence-based medical, surgical, and cosmetic dermatology procedures.",
+    "name": "Dr. Unnati's Clinical Skin & Laser Procedures Portfolio",
+    "description": "Evidence-based clinical, aesthetic, and advanced skin procedures.",
     "url": "https://drunnatiskinclinic.com/treatments",
     "numberOfItems": treatmentsData.length,
     "itemListElement": treatmentsData.map((t, idx) => ({

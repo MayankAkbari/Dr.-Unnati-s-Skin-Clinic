@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   keywords: [
     "Before After Laser Hair Removal Indian Skin",
     "Acne Scar Treatment Results Ahmedabad",
-    "HydraFacial Before After Nikol",
+    "Clinical HydraFacial Before After Nikol",
     "GFC Hair Regrowth Results Gujarat",
     "Bio FUE Hair Transplant Photos Ahmedabad",
     "Dr Unnati Panchal Patient Reviews Results"
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Before & After Clinical Transformations | Dr. Unnati's Skin Clinic Nikol",
-    description: "Verified patient outcomes achieved with US-FDA cleared lasers and physician-supervised protocols.",
+    description: "Verified patient outcomes achieved with US-FDA cleared lasers and specialist-supervised protocols.",
     url: "https://drunnatiskinclinic.com/results",
     type: "website",
   },
@@ -33,10 +33,10 @@ export default function ResultsLayout({
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     "name": "Clinical Before & After Transformations Gallery",
-    "description": "Evidence-based dermatological outcomes across 15,000+ patient treatments in Ahmedabad.",
+    "description": "Evidence-based clinical skin outcomes across 15,000+ patient treatments in Ahmedabad.",
     "url": "https://drunnatiskinclinic.com/results",
     "about": [
-      { "@type": "MedicalSpecialty", "name": "Dermatology" },
+      { "@type": "MedicalSpecialty", "name": "SkinCare" },
       { "@type": "MedicalSpecialty", "name": "LaserSurgery" },
       { "@type": "MedicalSpecialty", "name": "Trichology" }
     ],
