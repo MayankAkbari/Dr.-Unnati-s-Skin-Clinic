@@ -110,7 +110,7 @@ export default function BookingModal({ isOpen, onClose, defaultTreatmentId }: Bo
         >
           {/* Header */}
           <div className="bg-obsidian-900/90 text-white p-6 sm:p-8 border-b border-white/20 flex items-center justify-between backdrop-blur-md">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3.5">
               <div className="flex-shrink-0">
                 <Image
                   src="/logo.png"
@@ -120,12 +120,30 @@ export default function BookingModal({ isOpen, onClose, defaultTreatmentId }: Bo
                   className="h-12 sm:h-14 w-auto object-contain"
                 />
               </div>
-              <div>
-                <h3 className="font-extrabold text-lg sm:text-xl text-white">
+              <div className="hidden md:block w-px h-10 bg-white/20" />
+              <div className="hidden sm:flex items-center space-x-3">
+                <Image
+                  src="/dr-unnati-portrait.jpg"
+                  alt="Dr. Unnati Panchal"
+                  width={44}
+                  height={44}
+                  className="w-11 h-11 rounded-full object-cover object-top border-2 border-primary-gold flex-shrink-0 shadow-md"
+                />
+                <div>
+                  <h3 className="font-extrabold text-lg sm:text-xl text-white leading-tight">
+                    {step === 4 ? "Consultation Confirmed!" : "Priority Appointment Reservation"}
+                  </h3>
+                  <p className="text-xs text-primary-champagne font-bold">
+                    Dr. Unnati Panchal • Cosmetologist & Aesthetic Medicine Expert
+                  </p>
+                </div>
+              </div>
+              <div className="sm:hidden">
+                <h3 className="font-extrabold text-lg sm:text-xl text-white leading-tight">
                   {step === 4 ? "Consultation Confirmed!" : "Priority Appointment Reservation"}
                 </h3>
-                <p className="text-xs text-primary-champagne">
-                  Dr. Unnati Panchal • Cosmetologist & Aesthetic Medicine Expert (Nikol, Ahmedabad)
+                <p className="text-xs text-primary-champagne font-bold">
+                  Dr. Unnati Panchal • Cosmetologist
                 </p>
               </div>
             </div>

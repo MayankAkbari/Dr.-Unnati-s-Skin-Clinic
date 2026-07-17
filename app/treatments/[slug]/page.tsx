@@ -274,7 +274,7 @@ export default function TreatmentDetailPage({ params, onOpenBooking }: Treatment
             <div className="p-6 rounded-3xl liquid-glass-card border-2 border-white/60 dark:border-white/20 space-y-4 relative overflow-hidden">
               <div className="flex items-center space-x-3">
                 <div className="flex-shrink-0">
-                  <Image src="/logo.png" alt="Dr. Unnati's Skin Clinic Logo" width={80} height={80} className="h-12 w-auto object-contain" />
+                  <Image src="/dr-unnati-portrait.jpg" alt="Dr. Unnati Panchal" width={56} height={56} className="w-14 h-14 rounded-full object-cover object-top border-2 border-primary-gold/70 shadow-sm" />
                 </div>
                 <div>
                   <h4 className="font-bold text-sm text-foreground">Dr. Unnati Panchal</h4>

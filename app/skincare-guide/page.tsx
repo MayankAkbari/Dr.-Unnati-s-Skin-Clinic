@@ -212,7 +212,7 @@ export default function SkincareGuidePage({ onOpenBooking }: SkincareGuideProps)
                 <div className="flex items-center space-x-3 text-xs text-muted-foreground pb-6 border-b border-border/60 mb-6">
                   <div className="flex items-center space-x-2">
                     <div className="flex-shrink-0">
-                      <Image src="/logo.png" alt="Dr. Unnati's Skin Clinic Logo" width={32} height={32} className="h-7 w-auto object-contain" />
+                      <Image src="/dr-unnati-portrait.jpg" alt="Dr. Unnati Panchal" width={36} height={36} className="w-9 h-9 rounded-full object-cover object-top border border-primary-gold/60 shadow-sm" />
                     </div>
                     <span className="font-bold text-foreground">Authored by Dr. Unnati Panchal (Cosmetology Expert)</span>
                   </div>

@@ -27,27 +27,37 @@ export default function DoctorShowcaseSection({ onOpenBooking }: DoctorShowcaseP
             >
               <div className="absolute top-0 right-0 w-64 h-64 bg-primary-gold/15 rounded-full blur-3xl pointer-events-none" />
 
-              <div className="flex items-center space-x-4 pb-6 border-b border-border/20">
-                <div className="flex-shrink-0">
+              {/* Doctor High-Resolution Portrait */}
+              <div className="relative rounded-2xl overflow-hidden mb-6 border-2 border-primary-gold/40 shadow-2xl group">
+                <div className="aspect-[3/4] max-h-[360px] sm:max-h-[400px] w-full relative overflow-hidden bg-obsidian-950">
                   <Image
-                    src="/logo.png"
-                    alt="Dr. Unnati's Skin Clinic Logo"
-                    width={110}
-                    height={110}
-                    className="h-20 sm:h-24 w-auto object-contain"
+                    src="/dr-unnati-portrait.jpg"
+                    alt="Dr. Unnati Panchal - Cosmetologist & Aesthetic Medicine Expert"
+                    fill
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                    priority
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian-900 via-transparent to-transparent opacity-60" />
                 </div>
-                <div>
-                  <div className="inline-flex items-center px-3 py-1 rounded-full liquid-glass-pill text-primary-gold text-[10px] font-extrabold uppercase tracking-wider mb-1 border border-primary-gold/30">
-                    Cosmetologist & Aesthetic Medicine Expert
+                <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-obsidian-900/90 backdrop-blur-md px-3.5 py-2 rounded-xl border border-white/15 shadow-lg">
+                  <div className="flex items-center space-x-2">
+                    <span className="w-2.5 h-2.5 rounded-full bg-secondary-emerald animate-pulse" />
+                    <span className="text-[11px] font-extrabold text-white tracking-wide">Chief Cosmetologist</span>
                   </div>
-                  <h3 className="text-2xl sm:text-3xl font-black text-white leading-tight">
-                    Dr. Unnati Panchal
-                  </h3>
-                  <p className="text-xs sm:text-sm text-secondary-emerald font-extrabold mt-0.5">
-                    Cosmetologist & Aesthetic Medicine Expert
-                  </p>
+                  <span className="text-[10px] font-bold text-primary-gold px-2 py-0.5 rounded-md bg-primary-gold/15 border border-primary-gold/30">12+ Yrs Exp.</span>
                 </div>
+              </div>
+
+              <div className="pb-6 border-b border-border/20">
+                <div className="inline-flex items-center px-3 py-1 rounded-full liquid-glass-pill text-primary-gold text-[10px] font-extrabold uppercase tracking-wider mb-2 border border-primary-gold/30">
+                  Cosmetologist & Aesthetic Medicine Expert
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-black text-white leading-tight">
+                  Dr. Unnati Panchal
+                </h3>
+                <p className="text-xs sm:text-sm text-secondary-emerald font-extrabold mt-1">
+                  Founder & Clinical Authority
+                </p>
               </div>
 
               <div className="py-6 space-y-4 text-xs sm:text-sm text-pearl-100 dark:text-pearl-200 leading-relaxed font-normal">

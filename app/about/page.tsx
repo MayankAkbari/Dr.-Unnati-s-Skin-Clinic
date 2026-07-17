@@ -56,21 +56,32 @@ export default function AboutPage({ onOpenBooking }: AboutPageProps) {
           
           <div className="lg:col-span-5">
             <div className="rounded-3xl bg-obsidian-900 text-white dark:bg-obsidian-900/95 p-8 sm:p-10 border-2 border-primary-gold/50 shadow-2xl relative overflow-hidden backdrop-blur-2xl">
-              <div className="mb-6">
-                <Image
-                  src="/logo.png"
-                  alt="Dr. Unnati's Skin Clinic Logo"
-                  width={140}
-                  height={140}
-                  className="h-24 sm:h-28 w-auto object-contain"
-                />
+              <div className="relative rounded-2xl overflow-hidden mb-6 border-2 border-primary-gold/50 shadow-2xl group">
+                <div className="aspect-[3/4] max-h-[380px] w-full relative overflow-hidden bg-obsidian-950">
+                  <Image
+                    src="/dr-unnati-portrait.jpg"
+                    alt="Dr. Unnati Panchal - Cosmetologist & Aesthetic Medicine Expert"
+                    fill
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian-900 via-transparent to-transparent opacity-50" />
+                </div>
+                <div className="absolute bottom-3 left-3 right-3 bg-obsidian-900/90 backdrop-blur-md p-3 rounded-xl border border-white/20 shadow-xl flex items-center justify-between">
+                  <div>
+                    <span className="block font-black text-sm text-white">Dr. Unnati Panchal</span>
+                    <span className="block text-[10px] text-primary-gold font-bold uppercase tracking-wider">Chief Cosmetologist</span>
+                  </div>
+                  <div className="w-8 h-8 rounded-full bg-secondary-emerald/20 border border-secondary-emerald flex items-center justify-center text-secondary-emerald">
+                    <CheckCircle2 className="w-4 h-4" />
+                  </div>
+                </div>
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-black text-white">
                 Dr. Unnati Panchal
               </h3>
               <p className="text-xs text-secondary-emerald font-bold uppercase tracking-wider mt-1">
-                Founder & Chief Medical Director
+                Cosmetologist & Aesthetic Medicine Expert
               </p>
 
               <div className="my-6 pt-6 border-t border-border/20 space-y-3 text-xs sm:text-sm text-pearl-100 dark:text-pearl-200 leading-relaxed">
