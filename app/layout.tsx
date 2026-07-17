@@ -30,6 +30,17 @@ export const metadata: Metadata = {
   creator: "Dr. Unnati Panchal",
   publisher: "Dr. Unnati's Skin, Hair, Laser & Cosmetic Clinic",
   category: "Clinical Care / Skin & Aesthetics",
+  icons: {
+    icon: [
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/favicon.ico", sizes: "any" }
+    ],
+    apple: [
+      { url: "/apple-icon.png", type: "image/png", sizes: "180x180" }
+    ],
+    shortcut: "/favicon.ico"
+  },
   alternates: {
     canonical: "/",
   },
