@@ -273,8 +273,8 @@ export default function TreatmentDetailPage({ params, onOpenBooking }: Treatment
             {/* Doctor Authority Mini Card */}
             <div className="p-6 rounded-3xl liquid-glass-card border-2 border-white/60 dark:border-white/20 space-y-4 relative overflow-hidden">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 rounded-xl bg-white dark:bg-obsidian-900 p-1.5 shadow-md flex items-center justify-center overflow-hidden border border-primary-gold/30">
-                  <Image src="/logo.png" alt="Dr. Unnati's Skin Clinic Logo" width={40} height={40} className="object-contain w-full h-full" />
+                <div className="flex-shrink-0">
+                  <Image src="/logo.png" alt="Dr. Unnati's Skin Clinic Logo" width={80} height={80} className="h-12 w-auto object-contain" />
                 </div>
                 <div>
                   <h4 className="font-bold text-sm text-foreground">Dr. Unnati Panchal</h4>

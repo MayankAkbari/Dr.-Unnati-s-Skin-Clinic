@@ -98,27 +98,16 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
               : "max-w-[1400px] py-3.5 px-4 sm:px-6 lg:px-8"
           }`}
         >
-          {/* 1. Far Left Corner of the Header: Logo */}
-          <Link href="/" className="flex items-center space-x-3 group flex-shrink-0">
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary-gold via-primary-champagne to-secondary-emerald p-[1px] shadow-md group-hover:scale-105 transition-transform flex-shrink-0 overflow-hidden">
-              <div className="w-full h-full bg-white dark:bg-obsidian-900 rounded-xl flex items-center justify-center p-0.5">
-                <Image
-                  src="/logo.png"
-                  alt="Dr. Unnati's Skin Clinic Logo"
-                  width={40}
-                  height={40}
-                  className="object-contain w-full h-full"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col text-left">
-              <span className="font-extrabold text-base sm:text-lg tracking-tight text-foreground group-hover:text-primary-gold transition-colors">
-                Dr. Unnati&apos;s <span className="font-light text-secondary-emerald">Skin Clinic</span>
-              </span>
-              <span className="text-[9px] sm:text-[10px] text-muted-foreground uppercase tracking-widest font-semibold hidden xl:block">
-                Skin • Hair • Laser • Aesthetics
-              </span>
-            </div>
+          {/* 1. Far Left Corner of the Header: Logo (No text, no background box, increased size for crystal clear visibility) */}
+          <Link href="/" className="flex items-center group flex-shrink-0">
+            <Image
+              src="/logo.png"
+              alt="Dr. Unnati's Skin Clinic Logo"
+              width={260}
+              height={90}
+              priority
+              className="h-16 sm:h-20 lg:h-[84px] w-auto object-contain group-hover:scale-105 transition-transform"
+            />
           </Link>
 
           {/* 2. Center of the Header: Short, All Corners Rounded Navigation Bar (Page Names Only) */}

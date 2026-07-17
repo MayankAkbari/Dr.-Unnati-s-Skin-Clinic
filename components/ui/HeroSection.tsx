@@ -153,16 +153,14 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
             >
               {/* Doctor Header Banner */}
               <div className="flex items-center space-x-4 pb-6 border-b border-border/40">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-primary-gold to-secondary-emerald p-0.5 flex-shrink-0 shadow-md overflow-hidden">
-                  <div className="w-full h-full bg-white dark:bg-obsidian-900 rounded-2xl flex items-center justify-center p-1">
-                    <Image
-                      src="/logo.png"
-                      alt="Dr. Unnati's Skin Clinic Logo"
-                      width={56}
-                      height={56}
-                      className="object-contain w-full h-full"
-                    />
-                  </div>
+                <div className="flex-shrink-0">
+                  <Image
+                    src="/logo.png"
+                    alt="Dr. Unnati's Skin Clinic Logo"
+                    width={100}
+                    height={100}
+                    className="h-16 sm:h-20 w-auto object-contain"
+                  />
                 </div>
                 <div>
                   <div className="flex items-center space-x-1.5">

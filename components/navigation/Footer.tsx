@@ -28,29 +28,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-border/20">
           {/* Col 1 & 2: Clinic Brand & Bio */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center space-x-3 group">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary-gold to-secondary-emerald p-[1px] shadow-lg overflow-hidden">
-                <div className="w-full h-full bg-white dark:bg-obsidian-900 rounded-xl flex items-center justify-center p-0.5">
-                  <Image
-                    src="/logo.png"
-                    alt="Dr. Unnati's Skin Clinic Logo"
-                    width={40}
-                    height={40}
-                    className="object-contain w-full h-full"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-extrabold text-xl tracking-tight text-white group-hover:text-primary-gold transition-colors">
-                  Dr. Unnati&apos;s <span className="font-light text-secondary-emerald">Skin Clinic</span>
-                </span>
-                <span className="text-xs text-primary-champagne font-semibold tracking-wider">
-                  SKIN • HAIR • LASER • AESTHETICS
-                </span>
-              </div>
+            <Link href="/" className="inline-block group pb-2">
+              <Image
+                src="/logo.png"
+                alt="Dr. Unnati's Skin Clinic Logo"
+                width={260}
+                height={90}
+                className="h-20 sm:h-24 lg:h-28 w-auto object-contain group-hover:scale-105 transition-transform"
+              />
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed pr-6">
-              Ahmedabad&apos;s premier clinical center for advanced skin aesthetics, laser therapies, and Bio-FUE™ hair restoration. We combine evidence-based US-FDA cleared technologies with Dr. Unnati Panchal&apos;s 12+ years of surgical precision to deliver natural, transformational outcomes.
+              Ahmedabad&apos;s premier cosmetology center for advanced skin aesthetics, laser therapies, and Bio-FUE™ hair restoration. We combine evidence-based US-FDA cleared technologies with Dr. Unnati Panchal&apos;s 12+ years of aesthetic mastery to deliver natural, transformational outcomes.
             </p>
             <div className="pt-2 flex items-center space-x-3">
               <a

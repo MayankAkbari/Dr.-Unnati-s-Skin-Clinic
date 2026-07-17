@@ -28,16 +28,14 @@ export default function DoctorShowcaseSection({ onOpenBooking }: DoctorShowcaseP
               <div className="absolute top-0 right-0 w-64 h-64 bg-primary-gold/15 rounded-full blur-3xl pointer-events-none" />
 
               <div className="flex items-center space-x-4 pb-6 border-b border-border/20">
-                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-gold via-primary-champagne to-secondary-emerald p-0.5 flex-shrink-0 shadow-lg overflow-hidden">
-                  <div className="w-full h-full bg-white dark:bg-obsidian-900 rounded-2xl flex items-center justify-center p-1.5">
-                    <Image
-                      src="/logo.png"
-                      alt="Dr. Unnati's Skin Clinic Logo"
-                      width={70}
-                      height={70}
-                      className="object-contain w-full h-full"
-                    />
-                  </div>
+                <div className="flex-shrink-0">
+                  <Image
+                    src="/logo.png"
+                    alt="Dr. Unnati's Skin Clinic Logo"
+                    width={110}
+                    height={110}
+                    className="h-20 sm:h-24 w-auto object-contain"
+                  />
                 </div>
                 <div>
                   <div className="inline-flex items-center px-3 py-1 rounded-full liquid-glass-pill text-primary-gold text-[10px] font-extrabold uppercase tracking-wider mb-1 border border-primary-gold/30">

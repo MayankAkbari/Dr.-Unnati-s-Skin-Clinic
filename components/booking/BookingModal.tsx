@@ -111,23 +111,21 @@ export default function BookingModal({ isOpen, onClose, defaultTreatmentId }: Bo
           {/* Header */}
           <div className="bg-obsidian-900/90 text-white p-6 sm:p-8 border-b border-white/20 flex items-center justify-between backdrop-blur-md">
             <div className="flex items-center space-x-3">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-tr from-primary-gold to-secondary-emerald p-0.5 flex-shrink-0 overflow-hidden">
-                <div className="w-full h-full bg-white dark:bg-obsidian-900 rounded-xl flex items-center justify-center p-0.5">
-                  <Image
-                    src="/logo.png"
-                    alt="Dr. Unnati's Skin Clinic Logo"
-                    width={40}
-                    height={40}
-                    className="object-contain w-full h-full"
-                  />
-                </div>
+              <div className="flex-shrink-0">
+                <Image
+                  src="/logo.png"
+                  alt="Dr. Unnati's Skin Clinic Logo"
+                  width={140}
+                  height={50}
+                  className="h-12 sm:h-14 w-auto object-contain"
+                />
               </div>
               <div>
                 <h3 className="font-extrabold text-lg sm:text-xl text-white">
                   {step === 4 ? "Consultation Confirmed!" : "Priority Appointment Reservation"}
                 </h3>
                 <p className="text-xs text-primary-champagne">
-                  Dr. Unnati Panchal • Skin, Hair & Laser Specialist (Nikol, Ahmedabad)
+                  Dr. Unnati Panchal • Cosmetologist & Aesthetic Medicine Expert (Nikol, Ahmedabad)
                 </p>
               </div>
             </div>

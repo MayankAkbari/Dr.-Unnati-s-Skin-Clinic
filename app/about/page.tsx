@@ -56,16 +56,14 @@ export default function AboutPage({ onOpenBooking }: AboutPageProps) {
           
           <div className="lg:col-span-5">
             <div className="rounded-3xl bg-obsidian-900 text-white dark:bg-obsidian-900/95 p-8 sm:p-10 border-2 border-primary-gold/50 shadow-2xl relative overflow-hidden backdrop-blur-2xl">
-              <div className="w-24 h-24 rounded-3xl bg-gradient-to-tr from-primary-gold to-secondary-emerald p-0.5 mb-6 shadow-xl overflow-hidden">
-                <div className="w-full h-full bg-white dark:bg-obsidian-900 rounded-3xl flex items-center justify-center p-2">
-                  <Image
-                    src="/logo.png"
-                    alt="Dr. Unnati's Skin Clinic Logo"
-                    width={80}
-                    height={80}
-                    className="object-contain w-full h-full"
-                  />
-                </div>
+              <div className="mb-6">
+                <Image
+                  src="/logo.png"
+                  alt="Dr. Unnati's Skin Clinic Logo"
+                  width={140}
+                  height={140}
+                  className="h-24 sm:h-28 w-auto object-contain"
+                />
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-black text-white">
