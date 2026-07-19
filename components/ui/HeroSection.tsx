@@ -103,8 +103,14 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
               className="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
             >
               <button
-                onClick={onOpenBooking}
-                className="w-full sm:w-auto px-8 py-4.5 rounded-2xl liquid-glass-btn text-obsidian-900 font-extrabold text-base shadow-2xl hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center justify-center group"
+                onClick={() => {
+                  if (onOpenBooking) {
+                    onOpenBooking();
+                  } else {
+                    window.dispatchEvent(new Event('openBooking'));
+                  }
+                }}
+                className="w-full sm:w-auto px-10 py-5 rounded-2xl liquid-glass-btn text-obsidian-900 font-extrabold text-base shadow-2xl hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center justify-center group"
               >
                 <Calendar className="w-5 h-5 mr-2.5 text-obsidian-900" />
                 <span>Book Priority Consultation</span>
@@ -112,7 +118,7 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
               </button>
               <Link
                 href="/treatments"
-                className="w-full sm:w-auto px-7 py-4.5 rounded-2xl liquid-glass border border-white/60 dark:border-white/20 hover:border-primary-gold text-foreground font-extrabold text-base transition-all flex items-center justify-center shadow-md hover:-translate-y-1"
+                className="w-full sm:w-auto px-9 py-5 rounded-2xl liquid-glass border border-white/60 dark:border-white/20 hover:border-primary-gold text-foreground font-extrabold text-base transition-all flex items-center justify-center shadow-md hover:-translate-y-1"
               >
                 <span>Explore 15+ Treatments</span>
               </Link>

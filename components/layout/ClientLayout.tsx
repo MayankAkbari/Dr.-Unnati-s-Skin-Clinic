@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/navigation/Footer";
 import BookingModal from "@/components/booking/BookingModal";
@@ -16,9 +16,24 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
   const [selectedTreatmentId, setSelectedTreatmentId] = useState<string | undefined>(undefined);
 
   const handleOpenBooking = (treatmentId?: string) => {
-    setSelectedTreatmentId(treatmentId);
+    if (typeof treatmentId === 'string') {
+      setSelectedTreatmentId(treatmentId);
+    } else {
+      setSelectedTreatmentId(undefined);
+    }
     setBookingModalOpen(true);
   };
+
+  useEffect(() => {
+    const handleOpen = () => setBookingModalOpen(true);
+    window.addEventListener("openBooking", handleOpen);
+    
+    if (window.location.hash === "#booking") {
+      setBookingModalOpen(true);
+    }
+    
+    return () => window.removeEventListener("openBooking", handleOpen);
+  }, []);
 
   const openWhatsAppDirect = () => {
     const text = `Hello Dr. Unnati's Skin Clinic,\nI visited your website and would like to inquire about consultation and laser treatment options. Please guide me.`;
