@@ -54,7 +54,7 @@ export default function TreatmentsPage({ onOpenBooking }: TreatmentsPageProps) {
   };
 
   return (
-    <div className="pt-32 pb-24 min-h-screen bg-background">
+    <div className="pt-48 pb-24 min-h-screen bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Page Header */}
