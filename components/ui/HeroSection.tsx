@@ -24,7 +24,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
   return (
-    <section className="relative min-h-[92vh] pt-32 pb-20 overflow-hidden flex items-center justify-center bg-gradient-to-b from-pearl-100 via-background to-pearl-50 dark:from-obsidian-900 dark:via-background dark:to-obsidian-800">
+    <section className="relative min-h-[92vh] pt-48 pb-20 overflow-hidden flex items-center justify-center bg-gradient-to-b from-pearl-100 via-background to-pearl-50 dark:from-obsidian-900 dark:via-background dark:to-obsidian-800">
       {/* Background Decorative Glow Orbs */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-primary-gold/15 to-secondary-emerald/15 rounded-full blur-[120px] pointer-events-none animate-pulse-glow" />
       <div className="absolute top-1/3 -left-32 w-[400px] h-[400px] bg-primary-gold/10 rounded-full blur-[100px] pointer-events-none animate-float" />
