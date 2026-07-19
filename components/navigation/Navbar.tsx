@@ -31,6 +31,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [treatmentsDropdown, setTreatmentsDropdown] = useState(false);
+  const [aboutDropdown, setAboutDropdown] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -196,23 +197,57 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
               </AnimatePresence>
             </div>
 
-            <Link
-              href="/about"
-              className={`text-xs xl:text-sm font-semibold transition-colors hover:text-primary-gold ${
-                pathname === "/about" ? "text-primary-gold" : "text-foreground"
-              }`}
+            {/* About Dropdown */}
+            <div
+              className="relative group"
+              onMouseEnter={() => setAboutDropdown(true)}
+              onMouseLeave={() => setAboutDropdown(false)}
             >
-              About Dr. Unnati
-            </Link>
+              <Link
+                href="/about"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setAboutDropdown(!aboutDropdown);
+                }}
+                className={`flex items-center text-xs xl:text-sm font-semibold transition-colors hover:text-primary-gold py-1 cursor-pointer ${
+                  pathname.startsWith("/about") || pathname === "/certificates" || aboutDropdown ? "text-primary-gold" : "text-foreground"
+                }`}
+              >
+                About Dr. Unnati
+                <ChevronDown className={`w-3.5 h-3.5 ml-1 transition-transform duration-200 ${aboutDropdown ? "rotate-180 text-primary-gold" : ""}`} />
+              </Link>
 
-            <Link
-              href="/certificates"
-              className={`text-xs xl:text-sm font-semibold transition-colors hover:text-primary-gold ${
-                pathname === "/certificates" ? "text-primary-gold" : "text-foreground"
-              }`}
-            >
-              Certificates
-            </Link>
+              <AnimatePresence>
+                {aboutDropdown && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 12, scale: 0.98 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 12, scale: 0.98 }}
+                    transition={{ duration: 0.2, type: "spring", stiffness: 300, damping: 25 }}
+                    className="absolute top-full left-0 mt-3 w-56 bg-background/95 dark:bg-obsidian-950/95 backdrop-blur-3xl rounded-3xl border-2 border-primary-gold/40 dark:border-white/20 shadow-2xl shadow-black/80 p-3 grid grid-cols-1 gap-2 z-50 text-left"
+                  >
+                    <Link
+                      href="/about"
+                      onClick={() => setAboutDropdown(false)}
+                      className="flex items-start p-3 rounded-2xl bg-white/40 dark:bg-obsidian-900/60 hover:bg-primary-gold/15 dark:hover:bg-primary-gold/20 transition-all border border-transparent hover:border-primary-gold/50 group/item hover:shadow-md"
+                    >
+                      <div className="flex-1 text-sm font-extrabold text-foreground group-hover/item:text-primary-gold transition-colors">
+                        Clinic & Profile
+                      </div>
+                    </Link>
+                    <Link
+                      href="/certificates"
+                      onClick={() => setAboutDropdown(false)}
+                      className="flex items-start p-3 rounded-2xl bg-white/40 dark:bg-obsidian-900/60 hover:bg-primary-gold/15 dark:hover:bg-primary-gold/20 transition-all border border-transparent hover:border-primary-gold/50 group/item hover:shadow-md"
+                    >
+                      <div className="flex-1 text-sm font-extrabold text-foreground group-hover/item:text-primary-gold transition-colors">
+                        Certificates
+                      </div>
+                    </Link>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
 
             <Link
               href="/results"
@@ -317,15 +352,24 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
                   onClick={() => setMobileMenuOpen(false)}
                   className="px-3.5 py-2.5 rounded-xl text-base font-extrabold text-foreground hover:bg-white/50 dark:hover:bg-obsidian-800/80 transition-all"
                 >
-                  About Dr. Unnati Panchal
+                  About Dr. Unnati
                 </Link>
-                <Link
-                  href="/certificates"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="px-3.5 py-2.5 rounded-xl text-base font-extrabold text-foreground hover:bg-white/50 dark:hover:bg-obsidian-800/80 transition-all"
-                >
-                  Certificates & Credentials
-                </Link>
+                <div className="pl-6 space-y-2 border-l-2 border-primary/40 my-1">
+                  <Link
+                    href="/about"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block text-sm font-semibold text-muted-foreground hover:text-primary-gold py-1"
+                  >
+                    • Clinic & Profile
+                  </Link>
+                  <Link
+                    href="/certificates"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block text-sm font-semibold text-muted-foreground hover:text-primary-gold py-1"
+                  >
+                    • Certificates & Credentials
+                  </Link>
+                </div>
                 <Link
                   href="/results"
                   onClick={() => setMobileMenuOpen(false)}
