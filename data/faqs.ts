@@ -16,13 +16,13 @@ export const faqsData: FAQItem[] = [
     id: "gen-2",
     category: "general",
     question: "Where is Dr. Unnati's Skin Clinic located in Ahmedabad?",
-    answer: "Our luxury medical facility is conveniently located on the 2nd Floor, Above HDFC Bank, Near Raspan Cross Road in Nikol, Ahmedabad (382350). We have ample dedicated parking and elevator access for all patients."
+    answer: "Our luxury medical facility is conveniently located on F 27-28, First Floor, Raspan Arcade, Near Raspan Cross Road in Nikol, Ahmedabad (382350). We have ample dedicated parking and elevator access for all patients."
   },
   {
     id: "book-1",
     category: "booking",
     question: "How do I book an appointment with Dr. Unnati Panchal?",
-    answer: "You can book an instant consultation through our online booking portal on this website, connect with our care team via WhatsApp at +91 98765 43210, or call us directly during clinic hours (10:30 AM – 8:30 PM, Monday to Saturday). Prior appointment is highly recommended to avoid waiting times."
+    answer: "You can book an instant consultation through our online booking portal on this website, connect with our care team via WhatsApp at +91 63514 67025, or call us directly during clinic hours (10:30 AM – 8:30 PM, Monday to Saturday). Prior appointment is highly recommended to avoid waiting times."
   },
   {
     id: "book-2",

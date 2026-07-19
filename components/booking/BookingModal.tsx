@@ -336,7 +336,7 @@ export default function BookingModal({ isOpen, onClose, defaultTreatmentId }: Bo
                       <Phone className="w-4 h-4 absolute left-3.5 top-3.5 text-muted-foreground" />
                       <input
                         type="tel"
-                        placeholder="E.g., 98765 43210"
+                        placeholder="E.g., 63514 67025"
                         {...register("phone")}
                         className="w-full pl-10 pr-4 py-3.5 rounded-2xl border border-white/40 liquid-glass text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary-gold shadow-inner"
                       />

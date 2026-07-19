@@ -66,12 +66,12 @@ export default function ContactPage({ onOpenBooking }: ContactPageProps) {
                 How can patients reach Dr. Unnati&apos;s Skin Clinic in Nikol, Ahmedabad?
               </h2>
               <p className="text-xs sm:text-sm text-pearl-100 dark:text-pearl-200 leading-relaxed font-normal">
-                Dr. Unnati&apos;s Skin, Hair, Laser & Cosmetic Clinic is located on the <strong className="text-white">2nd Floor, Above HDFC Bank, Near Raspan Cross Road, Nikol, Ahmedabad, Gujarat 382350</strong>. Patients can book priority consultations or request treatment estimates by calling or WhatsApping <strong className="text-primary-gold">+91 98765 43210</strong>. Clinical consultation hours are Monday through Saturday from <strong className="text-white">10:30 AM to 8:30 PM</strong>.
+                Dr. Unnati&apos;s Skin, Hair, Laser & Cosmetic Clinic is located on <strong className="text-white">F 27-28, First Floor, Raspan Arcade, Near Raspan Cross Road, Nikol, Ahmedabad, Gujarat 382350</strong>. Patients can book priority consultations or request treatment estimates by calling or WhatsApping <strong className="text-primary-gold">+91 63514 67025</strong>. Clinical consultation hours are Monday through Saturday from <strong className="text-white">10:30 AM to 8:30 PM</strong>.
               </p>
             </div>
             <div className="flex-shrink-0 bg-obsidian-800 p-4 rounded-2xl border border-white/10 text-center space-y-1">
               <span className="block text-[11px] uppercase tracking-wider text-primary-gold font-bold">Direct Phone</span>
-              <span className="block text-white font-extrabold text-sm">+91 98765 43210</span>
+              <span className="block text-white font-extrabold text-sm">+91 63514 67025</span>
               <span className="block text-[11px] text-secondary-emerald font-bold">Priority Slot Booking</span>
             </div>
           </div>
@@ -199,7 +199,7 @@ export default function ContactPage({ onOpenBooking }: ContactPageProps) {
                       <input
                         type="tel"
                         required
-                        placeholder="E.g., +91 98765 43210"
+                        placeholder="E.g., +91 63514 67025"
                         className="w-full px-4 py-3.5 rounded-2xl border border-white/40 liquid-glass text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary-gold shadow-inner"
                       />
                     </div>

@@ -4,7 +4,7 @@ import { clinicProfile } from "@/data/doctors";
 
 export const metadata: Metadata = {
   title: "Contact & Book Consultation | Dr. Unnati's Skin & Laser Clinic Nikol, Ahmedabad",
-  description: "Schedule your priority consultation with Cosmetologist & Aesthetic Medicine Expert Dr. Unnati Panchal. Located on 2nd Floor, Above HDFC Bank, Near Raspan Cross Road, Nikol, Ahmedabad (382350). Call +91 98765 43210.",
+  description: "Schedule your priority consultation with Cosmetologist & Aesthetic Medicine Expert Dr. Unnati Panchal. Located on F 27-28, First Floor, Raspan Arcade, Near Raspan Cross Road, Nikol, Ahmedabad (382350). Call +91 63514 67025.",
   keywords: [
     "Contact Dr Unnati Panchal",
     "Skin Clinic Address Nikol Ahmedabad",

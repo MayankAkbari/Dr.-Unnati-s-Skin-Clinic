@@ -61,7 +61,7 @@ export const clinicProfile: Doctor = {
     { days: "Sunday", time: "By Prior Appointment Only" }
   ],
   location: {
-    address: "2nd Floor, Above HDFC Bank, Near Raspan Cross Road",
+    address: "F 27-28, First Floor, Raspan Arcade, Near Raspan Cross Road",
     area: "Nikol",
     city: "Ahmedabad",
     state: "Gujarat",
@@ -69,8 +69,8 @@ export const clinicProfile: Doctor = {
     googleMapsUrl: "https://maps.google.com"
   },
   contact: {
-    phone: "+91 98765 43210",
-    whatsapp: "+91 98765 43210",
-    email: "care@drunnatiskinclinic.com"
+    phone: "+91 63514 67025",
+    whatsapp: "+91 63514 67025",
+    email: "drunnatisclinic@gmail.com"
   }
 };
