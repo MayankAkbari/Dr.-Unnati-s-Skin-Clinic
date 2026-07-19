@@ -115,6 +115,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/certificates" className="hover:text-primary-gold transition-colors">
+                  Certificates & Credentials
+                </Link>
+              </li>
+              <li>
                 <Link href="/results" className="hover:text-primary-gold transition-colors">
                   Before & After Results
                 </Link>

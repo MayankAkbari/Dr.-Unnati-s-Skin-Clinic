@@ -123,7 +123,7 @@ export default function BookingModal({ isOpen, onClose, defaultTreatmentId }: Bo
               <div className="hidden md:block w-px h-10 bg-white/20" />
               <div className="hidden sm:flex items-center space-x-3">
                 <Image
-                  src="/dr-unnati-portrait.jpg"
+                  src="/dr-unnati-suthar.jpeg"
                   alt="Dr. Unnati Panchal"
                   width={44}
                   height={44}

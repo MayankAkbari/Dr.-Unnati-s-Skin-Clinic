@@ -206,6 +206,15 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
             </Link>
 
             <Link
+              href="/certificates"
+              className={`text-xs xl:text-sm font-semibold transition-colors hover:text-primary-gold ${
+                pathname === "/certificates" ? "text-primary-gold" : "text-foreground"
+              }`}
+            >
+              Certificates
+            </Link>
+
+            <Link
               href="/results"
               className={`text-xs xl:text-sm font-semibold transition-colors hover:text-primary-gold ${
                 pathname === "/results" ? "text-primary-gold" : "text-foreground"
@@ -309,6 +318,13 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
                   className="px-3.5 py-2.5 rounded-xl text-base font-extrabold text-foreground hover:bg-white/50 dark:hover:bg-obsidian-800/80 transition-all"
                 >
                   About Dr. Unnati Panchal
+                </Link>
+                <Link
+                  href="/certificates"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-3.5 py-2.5 rounded-xl text-base font-extrabold text-foreground hover:bg-white/50 dark:hover:bg-obsidian-800/80 transition-all"
+                >
+                  Certificates & Credentials
                 </Link>
                 <Link
                   href="/results"

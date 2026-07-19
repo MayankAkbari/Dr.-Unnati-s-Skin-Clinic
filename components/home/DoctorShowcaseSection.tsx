@@ -31,7 +31,7 @@ export default function DoctorShowcaseSection({ onOpenBooking }: DoctorShowcaseP
               <div className="relative rounded-2xl overflow-hidden mb-6 border-2 border-primary-gold/40 shadow-2xl group">
                 <div className="aspect-[3/4] max-h-[360px] sm:max-h-[400px] w-full relative overflow-hidden bg-obsidian-950">
                   <Image
-                    src="/dr-unnati-portrait.jpg"
+                    src="/dr-unnati-suthar.jpeg"
                     alt="Dr. Unnati Panchal - Cosmetologist & Aesthetic Medicine Expert"
                     fill
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-700"

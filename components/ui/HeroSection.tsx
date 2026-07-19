@@ -155,7 +155,7 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
               <div className="flex items-center space-x-4 pb-6 border-b border-border/40">
                 <div className="flex-shrink-0">
                   <Image
-                    src="/dr-unnati-portrait.jpg"
+                    src="/dr-unnati-suthar.jpeg"
                     alt="Dr. Unnati Panchal - Cosmetologist & Aesthetic Medicine Expert"
                     width={80}
                     height={80}
