@@ -82,7 +82,7 @@ export default function BookingModal({ isOpen, onClose, defaultTreatmentId }: Bo
   };
 
   const openWhatsAppConfirmation = () => {
-    const text = `Hello Dr. Unnati's Skin Clinic Team,\nI would like to confirm my consultation booking:\n\n👤 *Patient:* ${watchValues.fullName}\n📞 *Phone:* ${watchValues.phone}\n✨ *Treatment:* ${selectedTreatmentObj.title}\n📅 *Preferred Date:* ${watchValues.preferredDate}\n⏰ *Time Slot:* ${watchValues.preferredTimeSlot}\n💬 *Notes:* ${watchValues.notes || "None"}\n\nPlease confirm my slot. Thank you!`;
+    const text = `Hello Dr. Unnati's Skin Clinic Team,\nI would like to confirm my consultation booking:\n\n➤ *Patient:* ${watchValues.fullName}\n➤ *Phone:* ${watchValues.phone}\n➤ *Treatment:* ${selectedTreatmentObj.title}\n➤ *Preferred Date:* ${watchValues.preferredDate}\n➤ *Time Slot:* ${watchValues.preferredTimeSlot}\n➤ *Notes:* ${watchValues.notes || "None"}\n\nPlease confirm my slot. Thank you!`;
     const url = `https://wa.me/${clinicProfile.contact.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
   };
