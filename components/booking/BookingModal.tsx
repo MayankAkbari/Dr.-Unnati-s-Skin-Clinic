@@ -67,6 +67,12 @@ export default function BookingModal({ isOpen, onClose, defaultTreatmentId }: Bo
     },
   });
 
+  React.useEffect(() => {
+    if (isOpen && defaultTreatmentId) {
+      setValue("treatmentId", defaultTreatmentId);
+    }
+  }, [isOpen, defaultTreatmentId, setValue]);
+
   const watchTreatmentId = watch("treatmentId");
   const watchTimeSlot = watch("preferredTimeSlot");
   const watchValues = watch();
