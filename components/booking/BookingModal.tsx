@@ -438,17 +438,6 @@ export default function BookingModal({ isOpen, onClose, defaultTreatmentId }: Bo
                   >
                     <MessageSquare className="w-4 h-4 mr-2" /> Send via WhatsApp for Instant VIP Check-In
                   </button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      reset();
-                      setStep(1);
-                      onClose();
-                    }}
-                    className="w-full sm:w-auto px-6 py-4 rounded-2xl liquid-glass border border-white/40 text-foreground font-extrabold text-sm hover:border-primary-gold transition-all"
-                  >
-                    Done & Return to Site
-                  </button>
                 </div>
               </motion.div>
             )}
