@@ -26,6 +26,14 @@ export default function TreatmentsPage({ onOpenBooking }: TreatmentsPageProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState("all");
 
+  const handleOpenBooking = (id?: string) => {
+    if (onOpenBooking) {
+      onOpenBooking(id);
+    } else {
+      window.dispatchEvent(new CustomEvent('openBooking', { detail: { treatmentId: id } }));
+    }
+  };
+
   const filteredTreatments = treatmentsData.filter((t) => {
     const matchesCategory = activeCategory === "all" || t.category === activeCategory;
     const matchesSearch =
@@ -180,7 +188,7 @@ export default function TreatmentsPage({ onOpenBooking }: TreatmentsPageProps) {
 
                 <div className="mt-6 pt-4 border-t border-border/50 flex items-center justify-between gap-3">
                   <button
-                    onClick={() => onOpenBooking && onOpenBooking(t.id)}
+                    onClick={() => handleOpenBooking(t.id)}
                     className="flex-1 py-3 rounded-xl liquid-glass-btn text-obsidian-900 font-extrabold text-xs transition-all flex items-center justify-center shadow-md"
                   >
                     <Calendar className="w-3.5 h-3.5 mr-1.5" /> Book Consultation
@@ -206,7 +214,7 @@ export default function TreatmentsPage({ onOpenBooking }: TreatmentsPageProps) {
             </p>
           </div>
           <button
-            onClick={() => onOpenBooking && onOpenBooking()}
+            onClick={() => handleOpenBooking()}
             className="px-8 py-4.5 rounded-2xl liquid-glass-btn text-obsidian-900 font-extrabold text-sm shadow-xl hover:scale-105 transition-all flex-shrink-0"
           >
             Schedule Free Digital Skin Assessment →

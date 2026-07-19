@@ -32,6 +32,14 @@ export default function TreatmentDetailPage({ params, onOpenBooking }: Treatment
   const resolvedParams = use(params);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   
+  const handleOpenBooking = (id?: string) => {
+    if (onOpenBooking) {
+      onOpenBooking(id);
+    } else {
+      window.dispatchEvent(new CustomEvent('openBooking', { detail: { treatmentId: id } }));
+    }
+  };
+
   const treatment = treatmentsData.find((t) => t.slug === resolvedParams.slug);
 
   if (!treatment) {
@@ -256,7 +264,7 @@ export default function TreatmentDetailPage({ params, onOpenBooking }: Treatment
               </div>
 
               <button
-                onClick={() => onOpenBooking && onOpenBooking(treatment.id)}
+                onClick={() => handleOpenBooking(treatment.id)}
                 className="w-full py-4.5 rounded-2xl liquid-glass-btn text-obsidian-900 font-extrabold text-sm shadow-xl hover:scale-105 transition-all flex items-center justify-center"
               >
                 <Calendar className="w-4 h-4 mr-2" /> Book Slot For This Procedure

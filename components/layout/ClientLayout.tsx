@@ -25,7 +25,13 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
   };
 
   useEffect(() => {
-    const handleOpen = () => setBookingModalOpen(true);
+    const handleOpen = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      if (customEvent.detail && typeof customEvent.detail.treatmentId === 'string') {
+        setSelectedTreatmentId(customEvent.detail.treatmentId);
+      }
+      setBookingModalOpen(true);
+    };
     window.addEventListener("openBooking", handleOpen);
     
     if (window.location.hash === "#booking") {
