@@ -115,26 +115,28 @@ export default function CertificatesPage() {
             </div>
           </section>
 
-          {/* Certificates Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Certificates List */}
+          <div className="flex flex-col items-center gap-16 max-w-5xl mx-auto">
             {certificates.map((cert, idx) => (
-              <article key={idx} className="group rounded-3xl bg-obsidian-900 border border-white/10 overflow-hidden hover:border-primary-gold/50 transition-all duration-500 shadow-xl hover:shadow-2xl hover:shadow-primary-gold/10 flex flex-col">
-                <div className="relative aspect-[4/3] w-full bg-obsidian-950 p-4 border-b border-white/5 flex items-center justify-center overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian-900/80 to-transparent z-10" />
+              <article key={idx} className="w-full group rounded-3xl bg-obsidian-900 border border-white/10 overflow-hidden hover:border-primary-gold/50 transition-all duration-500 shadow-xl hover:shadow-2xl hover:shadow-primary-gold/10 flex flex-col">
+                <div className="relative w-full bg-obsidian-950 p-2 sm:p-6 md:p-8 border-b border-white/5 flex items-center justify-center overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian-900/40 to-transparent z-10 pointer-events-none" />
                   <Image
                     src={cert.src}
                     alt={`Certificate for ${cert.title} of Dr. Unnati Panchal`}
-                    fill
-                    className="object-contain p-4 group-hover:scale-105 transition-transform duration-700 z-0"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    width={1600}
+                    height={1200}
+                    className="w-full h-auto object-contain rounded-xl shadow-lg z-0 relative"
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    quality={100}
                   />
-                  <div className="absolute bottom-4 left-4 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-obsidian-800/80 backdrop-blur-sm border border-white/20 text-primary-gold">
-                    <FileBadge className="w-5 h-5" />
+                  <div className="absolute bottom-8 left-8 z-20 flex items-center justify-center w-12 h-12 rounded-full bg-obsidian-800/95 backdrop-blur-md border border-primary-gold/50 text-primary-gold shadow-2xl">
+                    <FileBadge className="w-6 h-6" />
                   </div>
                 </div>
-                <div className="p-6 flex-grow flex flex-col">
-                  <h3 className="text-xl font-bold text-white mb-2">{cert.title}</h3>
-                  <p className="text-sm text-pearl-300 leading-relaxed flex-grow">
+                <div className="p-8 sm:p-10">
+                  <h3 className="text-2xl sm:text-3xl font-black text-white mb-4">{cert.title}</h3>
+                  <p className="text-base sm:text-lg text-pearl-200 leading-relaxed max-w-4xl">
                     {cert.description}
                   </p>
                 </div>
