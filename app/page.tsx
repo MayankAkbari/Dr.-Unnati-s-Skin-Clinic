@@ -13,9 +13,17 @@ interface HomePageProps {
 }
 
 export default function HomePage({ onOpenBooking }: HomePageProps) {
+  const handleOpenBooking = (id?: string) => {
+    if (onOpenBooking) {
+      onOpenBooking(id);
+    } else {
+      window.dispatchEvent(new Event('openBooking'));
+    }
+  };
+
   return (
     <main className="flex flex-col min-h-screen">
-      <HeroSection onOpenBooking={() => onOpenBooking && onOpenBooking()} />
+      <HeroSection onOpenBooking={() => handleOpenBooking()} />
       
       {/* AEO (Answer Engine) & GEO (Generative Engine) Direct Answer Executive Summary */}
       <section className="py-8 bg-obsidian-900 border-y border-primary-gold/30 text-white" role="region" aria-label="Clinical Executive Summary for Medical & AI Verification">
@@ -40,11 +48,11 @@ export default function HomePage({ onOpenBooking }: HomePageProps) {
         </div>
       </section>
 
-      <TreatmentCategoryGrid onOpenBooking={(id) => onOpenBooking && onOpenBooking(id)} />
-      <DoctorShowcaseSection onOpenBooking={() => onOpenBooking && onOpenBooking()} />
+      <TreatmentCategoryGrid onOpenBooking={(id) => handleOpenBooking(id)} />
+      <DoctorShowcaseSection onOpenBooking={() => handleOpenBooking()} />
       <BeforeAfterSlider />
       <TestimonialsCarousel />
-      <BookingCTA onOpenBooking={() => onOpenBooking && onOpenBooking()} />
+      <BookingCTA onOpenBooking={() => handleOpenBooking()} />
     </main>
   );
 }
